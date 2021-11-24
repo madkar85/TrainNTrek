@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.navbar {
+  margin: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.5fr 0.4fr 1.3fr 1.3fr 0.5fr 0.5fr;
+  grid-template-areas: "none weather weather logo logo burger burger";
+  width: 100%;
+  min-height: 12vh;
+  max-height: 25vh;
+  background-color: #222831;
+  box-shadow: 0 0 100px #e8e8e8;
+  border-radius: 1em;
+}
+
+.hamburgerPlacement {
+  display: flex;
+  grid-area: burger;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoPlacement {
+  display: flex;
+  grid-area: logo;
+  align-items: center;
+  justify-content: center;
+}
+
+.weatherPlacement {
+  display: flex;
+  grid-area: weather;
+  align-items: center;
+  justify-content: center;
+}

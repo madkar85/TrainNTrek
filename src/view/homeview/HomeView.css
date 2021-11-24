@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.homeView {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "text"
+    "button"
+    "activityBox";
+  grid-template-rows: 0.1fr 0.15fr 0.2fr;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+.textField {
+  font-size: 1.5vw;
+}

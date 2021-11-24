@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.activityCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: auto;
+  border: solid black 4px;
+  background-color: #f05454;
+  margin: auto;
+  border-radius: 0.8em;
+  font-family: "Varela Round", sans-serif;
+  box-shadow: 0 0 10px grey;
+  margin-top: 1em;
+}
+
+.activityCardInfo {
+  width: 20vw;
+  height: auto;
+  font-size: 0.8vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .cardGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .activityCards {
+    width: 50vw;
+  }
+
+  .activityCardInfo {
+    width: 60vw;
+    font-size: 2vw;
+  }
+}

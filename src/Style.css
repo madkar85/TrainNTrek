@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-grey-background: #e8e8e8;
+  --clr-grey-hover: #8b8b8b6c;
+  --clr-navy-blue: #30475e;
+  --clr-red-cards: #f05454;
+  --clr-black: #222831;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+  background-color: var(--clr-grey-background);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.spinner {
+  height: 4em;
+  width: auto;
+  margin: 3em;
+}

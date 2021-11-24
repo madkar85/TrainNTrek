@@ -1,0 +1,33 @@
+.statsContainer {
+  width: 70%;
+  height: 30vh;
+  padding-top: 1.5em;
+}
+
+.statsContainer h1 {
+  font-size: 1.5vw;
+}
+
+.statsContainer h2 {
+  font-size: 1.1vw;
+}
+
+@media screen and (max-width: 700px) {
+  .statsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 30vh;
+    margin: auto;
+    align-items: center;
+    padding-top: 1.5em;
+  }
+
+  .statsContainer h1 {
+    font-size: 3.2vw;
+  }
+
+  .statsContainer h2 {
+    font-size: 2.2vw;
+  }
+}

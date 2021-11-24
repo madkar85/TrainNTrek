@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.hamburgerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4vh;
+}
+
+.hamburgerMenu {
+  width: 5vw;
+  min-width: 2.5em;
+  height: auto;
+}
+
+.dropDownAlts {
+  display: none;
+  position: absolute;
+  background-color: #e8e8e8;
+  padding: 1em;
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  top: 15vh;
+  cursor: pointer;
+}
+
+.dropDownAlts li {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+  .dropDownAlts {
+    top: 11vh;
+  }
+}
+
+.hamburgerWrapper:hover .dropDownAlts {
+  display: block;
+}
