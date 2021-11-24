@@ -16,30 +16,30 @@ function StravaApi(props) {
   const clientSecret = process.env.REACT_APP_STRAVA_CLIENTSECRET_KEY
   const refreshToken = process.env.REACT_APP_STRAVA_REFRESHTOKEN_KEY
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        console.log(clientId)
-        const stravaRefreshResponse = await axios.all([
-          axios.post(
-            `https://www.strava.com/oauth/token?client_id=${clientId}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       console.log(clientId)
+  //       const stravaRefreshResponse = await axios.all([
+  //         axios.post(
+  //           `https://www.strava.com/oauth/token?client_id=${clientId}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`
 
-          ),
-        ])
-        const stravaActivitiesResponse = await axios.get(
-          `https://www.strava.com/api/v3/athlete/activities?access_token=${stravaRefreshResponse[0].data.access_token}`
-        )
+  //         ),
+  //       ])
+  //       const stravaActivitiesResponse = await axios.get(
+  //         `https://www.strava.com/api/v3/athlete/activities?access_token=${stravaRefreshResponse[0].data.access_token}`
+  //       )
 
-        setResponse(stravaActivitiesResponse.data)
-        setUserStats(stravaActivitiesResponse.data)
-        setRecentActicity(stravaActivitiesResponse.data[0])
-        console.log(stravaActivitiesResponse.data)
-      } catch (error) {
-        alert("error when fetching data: " + error)
-      }
-    }
-    fetchData()
-  }, [])
+  //       setResponse(stravaActivitiesResponse.data)
+  //       setUserStats(stravaActivitiesResponse.data)
+  //       setRecentActicity(stravaActivitiesResponse.data[0])
+  //       console.log(stravaActivitiesResponse.data)
+  //     } catch (error) {
+  //       alert("error when fetching data: " + error)
+  //     }
+  //   }
+  //   fetchData()
+  // }, [])
 
   function spinnerWhileLoadning() {
     if (response && props.textInfo)
