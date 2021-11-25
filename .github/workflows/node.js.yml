@@ -4,9 +4,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ linus, johan, farzane, tina, elias, dennis, madde ]
+    branches: [ development, linus, johan, farzane, tina, elias, dennis, madde ]
   pull_request:
-    branches: [ development, staging, master ]
+    branches: [ staging, master ]
 
 jobs:
   build:
