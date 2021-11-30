@@ -32,14 +32,14 @@ jobs:
   development:
     if: | 
           (github.event_name == 'pull_request' ||
-          github.event_name == 'push') && (github.ref == 'refs/heads/dennis' ||
-          github.ref == 'refs/heads/elias' ||
-          github.ref == 'refs/heads/development' ||
-          github.ref == 'refs/heads/linus' ||
-          github.ref == 'refs/heads/johan' ||
-          github.ref == 'refs/heads/farzane' ||
-          github.ref == 'refs/heads/tina' ||
-          github.ref == 'refs/heads/madde')
+          github.event_name == 'push') && (github.base_ref == 'dennis' ||
+          github.base_ref == 'elias' ||
+          github.base_ref == 'development' ||
+          github.base_ref == 'linus' ||
+          github.base_ref == 'johan' ||
+          github.base_ref == 'farzane' ||
+          github.base_ref == 'tina' ||
+          github.base_ref == 'madde')
           
     needs: build
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
         CI: false
     
   staging:
-    if: github.event_name == 'pull_request' && github.base_ref == 'refs/heads/staging'
+    if: github.event_name == 'pull_request' && github.base_ref == 'development'
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -76,7 +76,7 @@ jobs:
         CI: false
       
   deploy:
-    if: github.event_name == 'pull_request' && github.base_ref == 'refs/heads/master'
+    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
     needs: build
     runs-on: ubuntu-latest
     environment:
