@@ -32,14 +32,9 @@ jobs:
   development:
     if: | 
           (github.event_name == 'pull_request' ||
-          github.event_name == 'push') && (github.base_ref == 'dennis' ||
-          github.base_ref == 'elias' ||
-          github.base_ref == 'development' ||
-          github.base_ref == 'linus' ||
-          github.base_ref == 'johan' ||
-          github.base_ref == 'farzane' ||
-          github.base_ref == 'tina' ||
-          github.base_ref == 'madde')
+          github.event_name == 'push') && 
+          github.base_ref == 'development'
+
           
     needs: build
     runs-on: ubuntu-latest
@@ -58,7 +53,7 @@ jobs:
         CI: false
     
   staging:
-    if: github.event_name == 'pull_request' && github.base_ref == 'development'
+    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -76,7 +71,7 @@ jobs:
         CI: false
       
   deploy:
-    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
+    if: github.event_name == 'pull_request' && github.base_ref == 'master'
     needs: build
     runs-on: ubuntu-latest
     environment:
