@@ -30,7 +30,9 @@ jobs:
         CI: false
     
   development:
-    if: github.event_name == 'push' or github.event_name == 'pull_request'
+    if: |
+      github.event_name == 'push' 
+      github.event_name == 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
