@@ -2,8 +2,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches-ignore: [ linus, johan, farzane, tina, elias, dennis, madde ]
   pull_request:
     branches: [ development, staging, master ]
 
