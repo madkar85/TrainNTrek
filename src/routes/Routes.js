@@ -45,13 +45,15 @@ const Routes = () => {
             component={blockRouteIfNotAuth(StatsView)}
           />
           <Route
-            path={RoutingPath.homeView}
-            component={blockRouteIfNotAuth(HomeView)}
-          />
-          <Route
+            exact
             path={RoutingPath.goalView}
             component={blockRouteIfNotAuth(GoalView)}
           />
+          <Route
+            path={RoutingPath.homeView}
+            component={blockRouteIfNotAuth(HomeView)}
+          />
+
         </Switch>
       </div>
     </Router>
