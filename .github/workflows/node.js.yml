@@ -1,10 +1,9 @@
+
 name: Node.js CI
 
 on:
-  push:
-    branches: [ linus, development ]
   pull_request:
-    branches: [ master ]
+    branches: [ development, staging, master ]
 
 jobs:
   build:
@@ -14,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/sis
 
     steps:
     - uses: actions/checkout@v2
@@ -27,3 +26,57 @@ jobs:
     - run: npm run build --if-present
       env:
         CI: false
+    
+  development:
+    if: | 
+          (github.event_name == 'pull_request' ||
+          github.event_name == 'push') && 
+          github.base_ref == 'development'
+
+          
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build --if-present
+      env:
+        CI: false
+    
+  staging:
+    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build --if-present
+      env:
+        CI: false
+      
+  deploy:
+    if: github.event_name == 'pull_request' && github.base_ref == 'master'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: master
+      url: xx
+    steps:
+      - name: deploy
+        run: echo "deploying"
+        env:
+          CI: false
