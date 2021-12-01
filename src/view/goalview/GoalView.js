@@ -1,6 +1,9 @@
 import React from "react"
 import "./GoalView.css"
 import Footer from "../../components/footer/Footer"
+import GoalMenu from "../../components/goalMenu/GoalMenu"
+import GoalForm from "../../components/goalForm/GoalForm"
+import GoalResult from "../../components/goalResult/GoalResult"
 
 const GoalView = () => {
 
@@ -8,9 +11,9 @@ const GoalView = () => {
         <>
             <div className="goalView">
                 <section className="textField">
-                    <h2>
-                        Test
-                    </h2>
+                    <h1>Set your personal Goals!</h1>
+                    <GoalForm />
+                    <GoalResult />
                 </section>
                 <Footer />
             </div>

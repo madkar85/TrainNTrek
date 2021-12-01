@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.formWrapper {
+  display: grid;
+  grid-template-areas:
+    "distanceText distanceField"
+    "paceText paceField"
+    "timeText timeField";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  width: 30vw;
+  height: auto;
+  border: solid black 4px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 0.8em;
+  box-shadow: 0 0 10px grey;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.5vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+input {
+  height: 3em;
+}
+
+.distanceText {
+  grid-area: distanceText;
+}
+
+.distanceField {
+  grid-area: distanceField;
+}
+
+.paceText {
+  grid-area: paceText;
+}
+
+.paceField {
+  grid-area: paceField;
+}
+
+.timeText {
+  grid-area: timeText;
+}
+
+.timeField {
+  grid-area: timeField;
+}
