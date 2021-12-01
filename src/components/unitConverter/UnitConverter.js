@@ -2,53 +2,37 @@ import { useState, useEffect } from "react";
 import "./UnitConverter.css";
 
 const UnitConverter = () => {
+  const { ConvertKmPerHourToMeterPerSecond } = require("./CalculateConversions");
+  const { ConvertMeterPerSecondToKmPerHour } = require("./CalculateConversions");
+  const { ConvertKmToMiles } = require("./CalculateConversions");
+  const { ConvertMilesToKm } = require("./CalculateConversions");
+  const { ConvertKiloToPound } = require("./CalculateConversions");
+  const { ConvertPoundToKilo } = require("./CalculateConversions");
+  
   const [unitOne, setUnitOne] = useState(0);
   const [selectedOption, setselectedOption] = useState("from km/h to m/s");
 
   const Calculate = () => {
     let result;
 
+    if(unitOne < 0) alert("Value can not be negative") //This happens twice right now, fix it 
     if (selectedOption == "from km/h to m/s") {
-      result = ConvertKmPerHourToMeterPerSecond();
+      result = ConvertKmPerHourToMeterPerSecond(unitOne);
     } else if (selectedOption == "from m/s to km/h") {
-      result = ConvertMeterPerSecondToKmPerHour();
+      result = ConvertMeterPerSecondToKmPerHour(unitOne);
     } else if (selectedOption == "from km to miles") {
-      result = ConvertKmToMiles();
+      result = ConvertKmToMiles(unitOne);
     } else if (selectedOption == "from miles to km") {
-      result = ConvertMilesToKm();
+      result = ConvertMilesToKm(unitOne);
     } else if (selectedOption == "from kilo to pound") {
-      result = ConvertKiloToPound();
+      result = ConvertKiloToPound(unitOne);
     } else if (selectedOption == "from pound to kilo") {
-      result = ConvertPoundToKilo();
+      result = ConvertPoundToKilo(unitOne);
     }
 
     return <div>{result.toFixed(2)}</div>;
   };
-
-  const ConvertKmPerHourToMeterPerSecond = () => {
-    return unitOne * 1 * 0.277777778;
-  };
-
-  const ConvertMeterPerSecondToKmPerHour = () => {
-    return unitOne * 1 * 3.6;
-  };
-
-  const ConvertKmToMiles = () => {
-    return unitOne * 1 * 0.621371192;
-  };
-
-  const ConvertMilesToKm = () => {
-    return unitOne * 1 * 1.609344;
-  };
-
-  const ConvertKiloToPound = () => {
-    return unitOne * 1 * 2.20462262;
-  };
-
-  const ConvertPoundToKilo = () => {
-    return unitOne * 1 * 0.45359237;
-  };
-
+  
   return (
     <div className="converterWrapper">
       <h1 className="title">Convert</h1>
