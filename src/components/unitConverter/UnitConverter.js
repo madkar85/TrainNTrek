@@ -7,7 +7,7 @@ const UnitConverter = () => {
 
   const Calculate = () => {
     let result;
-    
+
     if (selectedOption == "from km/h to m/s") {
       result = ConvertKmPerHourToMeterPerSecond();
     } else if (selectedOption == "from m/s to km/h") {
@@ -51,7 +51,7 @@ const UnitConverter = () => {
 
   return (
     <div className="converterWrapper">
-      <h1>Convert</h1>
+      <h1 className="title">Convert</h1>
 
       <input
         classname="inputField"
