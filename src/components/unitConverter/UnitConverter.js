@@ -15,22 +15,27 @@ const UnitConverter = () => {
   const Calculate = () => {
     let result;
 
-    if(unitOne < 0) alert("Value can not be negative") //This happens twice right now, fix it 
-    if (selectedOption == "from km/h to m/s") {
-      result = ConvertKmPerHourToMeterPerSecond(unitOne);
-    } else if (selectedOption == "from m/s to km/h") {
-      result = ConvertMeterPerSecondToKmPerHour(unitOne);
-    } else if (selectedOption == "from km to miles") {
-      result = ConvertKmToMiles(unitOne);
-    } else if (selectedOption == "from miles to km") {
-      result = ConvertMilesToKm(unitOne);
-    } else if (selectedOption == "from kilo to pound") {
-      result = ConvertKiloToPound(unitOne);
-    } else if (selectedOption == "from pound to kilo") {
-      result = ConvertPoundToKilo(unitOne);
+    if(unitOne >= 0){
+      if (selectedOption == "from km/h to m/s") {
+        result = ConvertKmPerHourToMeterPerSecond(unitOne);
+      } else if (selectedOption == "from m/s to km/h") {
+        result = ConvertMeterPerSecondToKmPerHour(unitOne);
+      } else if (selectedOption == "from km to miles") {
+        result = ConvertKmToMiles(unitOne);
+      } else if (selectedOption == "from miles to km") {
+        result = ConvertMilesToKm(unitOne);
+      } else if (selectedOption == "from kilo to pound") {
+        result = ConvertKiloToPound(unitOne);
+      } else if (selectedOption == "from pound to kilo") {
+        result = ConvertPoundToKilo(unitOne);
+      }
+  
+      return <div>{result.toFixed(2)}</div>;
+    }else{
+      alert("Woops, value is not allowed to be negative")
+      return "Value is negative"
     }
-
-    return <div>{result.toFixed(2)}</div>;
+    
   };
   
   return (
