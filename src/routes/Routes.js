@@ -53,7 +53,6 @@ const Routes = () => {
             path={RoutingPath.homeView}
             component={blockRouteIfNotAuth(HomeView)}
           />
-
         </Switch>
       </div>
     </Router>

@@ -9,5 +9,5 @@ export default {
   homeView,
   loginView,
   statsView,
-  goalView
+  goalView,
 }
