@@ -6,6 +6,7 @@ import LoginView from "../view/loginview/LoginView"
 import StatsView from "../view/statsview/StatsView"
 import RoutingPath from "./RoutingPath"
 import { UserContext } from "../shared/provider/UserProvider"
+import BMIView from "../view/bmiview/BMIView"
 
 // Routes and authorisation mechanism
 
@@ -44,9 +45,15 @@ const Routes = () => {
             component={blockRouteIfNotAuth(StatsView)}
           />
           <Route
+            exact
+            path={RoutingPath.bmiView}
+            component={blockRouteIfNotAuth(BMIView)}
+          />
+          <Route
             path={RoutingPath.homeView}
             component={blockRouteIfNotAuth(HomeView)}
           />
+
         </Switch>
       </div>
     </Router>

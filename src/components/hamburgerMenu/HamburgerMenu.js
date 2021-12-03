@@ -30,6 +30,10 @@ const HamburgerMenu = () => {
           <li> Stats </li>
         </Link>
         <br />
+        <Link to={RoutingPath.bmiView}>
+          <li> BMI calculator </li>
+        </Link>
+        <br />
         <li onClick={() => logout()}>Logout</li>
       </div>
     </div>
