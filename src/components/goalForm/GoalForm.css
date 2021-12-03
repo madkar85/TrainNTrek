@@ -24,7 +24,9 @@
 }
 
 input {
-  height: 3em;
+  height: 3vh;
+  width: 7vw;
+  margin-right: 1.5vw;
 }
 
 .distanceText {
@@ -33,6 +35,9 @@ input {
 
 .distanceField {
   grid-area: distanceField;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paceText {
@@ -49,4 +54,13 @@ input {
 
 .timeField {
   grid-area: timeField;
+}
+
+.submit-btn {
+  height: 2.8vh;
+  width: auto;
+  font-size: 0.8vw;
+  background-color: rgb(194, 194, 194);
+  border-radius: 6px;
+  font-family: "Varela Round", sans-serif;
 }
