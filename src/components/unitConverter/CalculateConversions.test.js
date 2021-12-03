@@ -1,66 +1,66 @@
-const {ConvertKmPerHourToMeterPerSecond} = require('./CalculateConversions')
-const {ConvertMeterPerSecondToKmPerHour} = require('./CalculateConversions')
-const {ConvertKmToMiles} = require('./CalculateConversions')
-const {ConvertMilesToKm} = require('./CalculateConversions')
-const {ConvertKiloToPound} = require('./CalculateConversions')
-const {ConvertPoundToKilo} = require('./CalculateConversions')
+const { ConvertKmPerHourToMeterPerSecond } = require("./CalculateConversions");
+const { ConvertMeterPerSecondToKmPerHour } = require("./CalculateConversions");
+const { ConvertKmToMiles } = require("./CalculateConversions");
+const { ConvertMilesToKm } = require("./CalculateConversions");
+const { ConvertKiloToPound } = require("./CalculateConversions");
+const { ConvertPoundToKilo } = require("./CalculateConversions");
 
-describe("Testing unit converter, with correct data, should be equal", () => {
+describe("Converting from km/h to m/s", () => {
+  test.each([
+    [250, 69.4444445],
+    [0, 0],
+    [-7, 0],
+  ])("km/h to m/s", (a, expected) => {
+    expect(ConvertKmPerHourToMeterPerSecond(a)).toBeCloseTo(expected);
+  });
+});
 
-    test('converts km/h to m/s', () => {
-        expect(ConvertKmPerHourToMeterPerSecond(1)).toEqual(0.277777778)
-    })
+describe("Converting from m/s to km/h", () => {
+  test.each([
+    [250, 900],
+    [0, 0],
+    [-7, 0],
+  ])("m/s to km/h", (a, expected) => {
+    expect(ConvertMeterPerSecondToKmPerHour(a)).toBe(expected);
+  });
+});
 
-    test('converts m/s to km/h', () => {
-        expect(ConvertMeterPerSecondToKmPerHour(1)).toEqual(3.6)
-    })
+describe("Converting from km to mile", () => {
+  test.each([
+    [250, 155.342798],
+    [0, 0],
+    [-7, 0],
+  ])("km to miles", (a, expected) => {
+    expect(ConvertKmToMiles(a)).toBeCloseTo(expected);
+  });
+});
 
-    test('converts km to miles', () => {
-        expect(ConvertKmToMiles(1)).toEqual(0.621371192 )
-    })
+describe("Converting from mile to km", () => {
+  test.each([
+    [250, 402.336],
+    [0, 0],
+    [-7, 0],
+  ])("miles to km", (a, expected) => {
+    expect(ConvertMilesToKm(a)).toBe(expected);
+  });
+});
 
-    test('converts miles to km', () => {
-        expect(ConvertMilesToKm(1)).toEqual(1.609344 )
-    })
+describe("Converting from kilo to pound", () => {
+  test.each([
+    [250, 551.155655],
+    [0, 0],
+    [-7, 0],
+  ])("kilo to pound", (a, expected) => {
+    expect(ConvertKiloToPound(a)).toBeCloseTo(expected);
+  });
+});
 
-    test('converts kilo to pound', () => {
-        expect(ConvertKiloToPound(1)).toEqual(2.20462262 )
-    })
-
-    test('converts pound to kilo', () => {
-        expect(ConvertPoundToKilo(1)).toEqual(0.45359237 )
-    })
-
-    test('converts pound to kilo', () => {
-        expect(ConvertPoundToKilo(-5)).toEqual(0)
-    })
-   
-})
-
-describe("Testing unit converter, with wrong data, should not be equal", () => {
-
-    test('converts km/h to m/s', () => {
-        expect(ConvertKmPerHourToMeterPerSecond(2)).not.toEqual(0.277777778)
-    })
-
-    test('converts m/s to km/h', () => {
-        expect(ConvertMeterPerSecondToKmPerHour(2)).not.toEqual(3.6)
-    })
-
-    test('converts km to miles', () => {
-        expect(ConvertKmToMiles(2)).not.toEqual(0.621371192 )
-    })
-
-    test('converts miles to km', () => {
-        expect(ConvertMilesToKm(2)).not.toEqual(1.609344 )
-    })
-
-    test('converts kilo to pound', () => {
-        expect(ConvertKiloToPound(2)).not.toEqual(2.20462262 )
-    })
-
-    test('converts pound to kilo', () => {
-        expect(ConvertPoundToKilo(2)).not.toEqual(0.45359237 )
-    })
-
-})
+describe("Converting from pound to kilo", () => {
+  test.each([
+    [250, 113.3980925],
+    [0, 0],
+    [-7, 0],
+  ])("pound to kilo", (a, expected) => {
+    expect(ConvertPoundToKilo(a)).toBe(expected);
+  });
+});
