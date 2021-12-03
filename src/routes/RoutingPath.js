@@ -3,11 +3,11 @@
 const homeView = "/"
 const loginView = "/login"
 const statsView = "/stats"
-const registerView = "/register"
+const goalView = "/goal"
 
 export default {
   homeView,
   loginView,
   statsView,
-  registerView,
+  goalView,
 }
