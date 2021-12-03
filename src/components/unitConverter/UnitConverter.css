@@ -1,0 +1,19 @@
+.converterWrapper {
+  width: 12vw;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 5vw;
+  bottom: 31vh;
+  height: 18vh;
+  border: black;
+  border-radius: 1.5em;
+  text-align: center;
+}
+
+.optionDropDown {
+  margin: 0.75em;
+}
+
+.equalSign {
+  margin-top: -0.5em;
+}
