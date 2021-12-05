@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 .bmiView {
+  position: relative;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -11,4 +12,5 @@
 
 .textField {
   font-size: 1.5vw;
+  padding-bottom: 5em;
 }
