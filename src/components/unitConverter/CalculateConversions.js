@@ -1,5 +1,3 @@
-//TODO: There is a limit for how many numbers can be put into the input field, use a if case or something to fix this, also tell the user the value is too great
-
 const ConvertKmPerHourToMeterPerSecond = (userInput) => {
   if(userInput < 0) return 0
   return userInput * 1 * 0.277777778;
