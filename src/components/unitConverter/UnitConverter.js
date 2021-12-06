@@ -10,27 +10,27 @@ const UnitConverter = () => {
   const { ConvertPoundToKilo } = require("./CalculateConversions");
   
   const [unitOne, setUnitOne] = useState(0);
-  const [selectedOption, setselectedOption] = useState("from km/h to m/s");
+  const [selectedOption, setselectedOption] = useState("km/h to m/s");
 
   const Calculate = () => {
     let result;
 
     if(unitOne >= 0){
-      if (selectedOption == "from km/h to m/s") {
+      if (selectedOption == "km/h to m/s") {
         result = ConvertKmPerHourToMeterPerSecond(unitOne);
-      } else if (selectedOption == "from m/s to km/h") {
+      } else if (selectedOption == "m/s to km/h") {
         result = ConvertMeterPerSecondToKmPerHour(unitOne);
-      } else if (selectedOption == "from km to miles") {
+      } else if (selectedOption == "km to miles") {
         result = ConvertKmToMiles(unitOne);
-      } else if (selectedOption == "from miles to km") {
+      } else if (selectedOption == "miles to km") {
         result = ConvertMilesToKm(unitOne);
-      } else if (selectedOption == "from kilo to pound") {
+      } else if (selectedOption == "kilo to pound") {
         result = ConvertKiloToPound(unitOne);
-      } else if (selectedOption == "from pound to kilo") {
+      } else if (selectedOption == "pound to kilo") {
         result = ConvertPoundToKilo(unitOne);
       }
   
-      return <div>{result.toFixed(2)}</div>;
+      return <div className="output">{result.toFixed(2)}</div>;
     }else{
       alert("Woops, value is not allowed to be negative")
       return "Value is negative"
@@ -43,7 +43,7 @@ const UnitConverter = () => {
       <h1 className="title">Convert</h1>
 
       <input
-        classname="inputField"
+        className="inputField"
         placeholder="Write here"
         type="number"
         onChange={(event) => setUnitOne(event.target.value)}
@@ -53,12 +53,12 @@ const UnitConverter = () => {
         className="optionDropDown"
         onChange={(event) => setselectedOption(event.target.value)}
       >
-        <option value="from km/h to m/s">from km/h to m/s</option>
-        <option value="from m/s to km/h">from m/s to km/h</option>
-        <option value="from km to miles">from km to miles</option>
-        <option value="from miles to km">from miles to km</option>
-        <option value="from kilo to pound">from kilo to pound</option>
-        <option value="from pound to kilo">from pound to kilo</option>
+        <option value="km/h to m/s">km/h to m/s</option>
+        <option value="m/s to km/h">m/s to km/h</option>
+        <option value="km to miles">km to miles</option>
+        <option value="miles to km">miles to km</option>
+        <option value="kilo to pound">kilo to pound</option>
+        <option value="pound to kilo">pound to kilo</option>
       </select>
 
       <div className="equalSign">=</div>
