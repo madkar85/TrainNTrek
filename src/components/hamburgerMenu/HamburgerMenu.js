@@ -30,6 +30,9 @@ const HamburgerMenu = () => {
           <li> Stats </li>
         </Link>
         <br />
+        <Link to={RoutingPath.searchView}>
+          <li> Search</li>
+        </Link>
         <li onClick={() => logout()}>Logout</li>
       </div>
     </div>
