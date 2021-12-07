@@ -7,6 +7,7 @@ import { StatsContext } from "../../shared/provider/StatsProvider"
 import { useHistory } from "react-router-dom"
 import RoutingPath from "../../routes/RoutingPath"
 import ListOfUsers from "../../components/listOfUsers/ListOfUsers"
+import UnitConverter from "../../components/unitConverter/UnitConverter"
 
 // Statistics View
 
@@ -31,6 +32,7 @@ const StatsView = () => {
           <CombinedStats />
           </div>
           </section>
+          <UnitConverter />
           <Footer />
         </>
       )
