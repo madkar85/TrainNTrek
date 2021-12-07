@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/Navbar"
 import HomeView from "../view/homeview/HomeView"
 import LoginView from "../view/loginview/LoginView"
 import StatsView from "../view/statsview/StatsView"
+import SearchView from "../view/searchview/SearchView"
 import GoalView from "../view/goalview/GoalView"
 import RoutingPath from "./RoutingPath"
 import { UserContext } from "../shared/provider/UserProvider"
@@ -47,9 +48,14 @@ const Routes = () => {
           />
           <Route
             exact
+            path={RoutingPath.searchView}
+            component={blockRouteIfNotAuth(SearchView)}
+           />
+           <Route
+            exact
             path={RoutingPath.goalView}
             component={blockRouteIfNotAuth(GoalView)}
-          />
+           />
             <Route
             exact
             path={RoutingPath.bmiView}
