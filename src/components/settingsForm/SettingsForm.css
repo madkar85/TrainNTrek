@@ -3,11 +3,13 @@ form {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 2vw;
+    column-gap: 1vw;
 }
 
 .label {
     font-size: 2rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .inputBox {
@@ -19,15 +21,22 @@ form {
 .field {
     text-align: left;
     padding: 1vw 0.5vw;
+    border: solid black 0.1vw;
+    border-radius: 2em;
+    box-shadow: 0 0 10px var(--clr-navy-blue);
 }
 
 .genderField {
     display: grid; 
+    border: solid black 0.1vw;
+    border-radius: 2em;
+    box-shadow: 0 0 10px var(--clr-navy-blue);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 0.5vw;
     margin: 0;
 }
+
 .gender {
     padding: 0.5vw;
     font-size: 1.5rem;
@@ -44,6 +53,8 @@ form {
 }
 
 .submitButton {
+    position: relative;
+    top: 2em;
     width: 10vw;
     height: auto;
     color: var(--clr-navy-blue);
@@ -51,12 +62,12 @@ form {
     border-radius: 1em;
     margin: auto;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-bottom: 2vh;
     background-color: var(--clr-grey-background);
     font-family: "Varela Round", sans-serif;
     font-weight: 800;
-    box-shadow: 0 0 15px var(--clr-navy-blue);
+    box-shadow: 0 0 10px var(--clr-navy-blue);
     }
 
 .submitButton:hover {
