@@ -42,7 +42,7 @@ function GoalForm() {
                         value={distanceState}
                         onChange={(e) => setDistanceState(e.target.value)}
                     />
-                    <input className="submit-btn" type="submit" />
+                    <input className="submit-btn" type="submit" value="Submit" />
                 </form>
             </div>
             <div className="paceText">
@@ -55,7 +55,7 @@ function GoalForm() {
                         value={paceState}
                         onChange={(e) => setPaceState(e.target.value)}
                     />
-                    <input className="submit-btn" type="submit" />
+                    <input className="submit-btn" type="submit" value="Submit" />
                 </form>
             </div>
             <div className="timeText">
@@ -68,7 +68,7 @@ function GoalForm() {
                         value={timeState}
                         onChange={(e) => setTimeState(e.target.value)}
                     />
-                    <input className="submit-btn" type="submit" />
+                    <input className="submit-btn" type="submit" value="Submit" />
                 </form>
             </div>
         </div>

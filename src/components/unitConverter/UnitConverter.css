@@ -1,19 +1,47 @@
 .converterWrapper {
-  width: 12vw;
+  display: grid;
   box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: 5vw;
-  bottom: 31vh;
-  height: 18vh;
-  border: black;
-  border-radius: 1.5em;
+  border-radius: 0.8em;
+  position: relative;
+  bottom: 25vh;
+  left: 30vw;
+  width: 22vw;
+}
+
+.optionDropDown,
+.equalSign,
+.inputField,
+.title,
+.output {
+  width: auto;
+  height: auto;
+  font-size: 1vw;
   text-align: center;
+  margin: 0.25em;
+}
+@media screen and (max-width: 1000px) {
+  .optionDropDown,
+  .equalSign,
+  .inputField,
+  .title,
+  .output {
+    font-size: 1.35vw;
+  }
 }
 
-.optionDropDown {
-  margin: 0.75em;
-}
+@media screen and (max-width: 700px) {
+  .optionDropDown,
+  .equalSign,
+  .inputField,
+  .title,
+  .output {
+    width: 50vw;
+    font-size: 2.5vw;
+  }
 
-.equalSign {
-  margin-top: -0.5em;
+  .converterWrapper {
+    bottom: 5vh;
+    left: auto;
+    width: auto;
+  }
 }
