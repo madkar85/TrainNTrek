@@ -9,7 +9,7 @@ import Navbar from "../components/navbar/Navbar";
 import HomeView from "../view/homeview/HomeView";
 import LoginView from "../view/loginview/LoginView";
 import StatsView from "../view/statsview/StatsView";
-import DietView from "../view/dietview/DietView";
+import DietView from "../view/dietView/DietView";
 import RoutingPath from "./RoutingPath";
 import { UserContext } from "../shared/provider/UserProvider";
 

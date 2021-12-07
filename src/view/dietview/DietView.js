@@ -1,25 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import MealList from "../../components/dietMeal/MealList";
 import "./DietView.css";
-import Footer from "../../components/footer/Footer";
-import StravaApi from "../../shared/api/StravaApi";
 
-// Main and home view
+function DietView() {
+  const [mealData, setMealData] = useState(null);
+  const [calories, setCalories] = useState(null);
+  const spoonacularkey = process.env.REACT_APP_SPOONACULAR_KEY;
 
-const DietView = () => {
+  function getMealData() {
+    fetch(
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=${spoonacularkey}&timeFrame=day&targetCalories=${calories}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setMealData(data);
+      })
+      .catch(() => {
+        console.log("error");
+      });
+  }
+
+  function handleChange(e) {
+    setCalories(e.target.value);
+  }
+
   return (
-    <>
-      <StravaApi textInfo={false} />
-      <div className="dietView">
-        <section className="textField">
-          <h2>
-            Dietview
-            <br />
-          </h2>
-        </section>
-        <Footer />
-      </div>
-    </>
+    <div className="Diet">
+      <section className="controls">
+        <input
+          type="number"
+          placeholder="Calories (e.g. 2000)"
+          onChange={handleChange}
+        />
+        <button onClick={getMealData}>Get Daily Meal Plan</button>
+      </section>
+      {mealData && <MealList mealData={mealData} />}
+    </div>
   );
-};
+}
 
 export default DietView;
