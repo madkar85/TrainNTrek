@@ -37,6 +37,8 @@ const HamburgerMenu = () => {
         <Link to={RoutingPath.goalView}>
           <li> Goal </li>
         </Link>
+        <Link to={RoutingPath.settingsView}>
+          <li> Settings </li></Link>
         <li onClick={() => logout()}>Logout</li>
       </div>
     </div>
