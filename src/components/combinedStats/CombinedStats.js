@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { StatsContext } from "../../shared/provider/StatsProvider"
 import "./CombinedStats.css"
+import DateTest from "./DateTest"
 
 // Combined stats from past month showed on the statistics page
 
@@ -47,9 +48,12 @@ const CombinedStats = () => {
     }
   })
 
-  function DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth) {
-    if (activityDateYearAndMonth > oneMonthBackYearAndMonth) return true
-  }
+  DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth);
+
+  // function DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth) {
+  //   if (activityDateYearAndMonth > oneMonthBackYearAndMonth) return true
+  //   else return false
+  // }
 
   return (
     <div className="statsContainer">
