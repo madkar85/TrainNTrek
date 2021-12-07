@@ -28,11 +28,11 @@
 .loginButtons {
   width:100%;
   display: flex;
-  gap: 1em;
+  gap: 5%;
 }
 
 .btn{
-  width: 50%;  
+  width: 45%;  
   height: auto;
   color: var(--clr-navy-blue);
   border: solid var(--clr-black) 2px;

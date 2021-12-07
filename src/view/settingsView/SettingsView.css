@@ -1,0 +1,19 @@
+.settingsView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 4vw;
+    margin: 1vw 0;
+}
+
+.settingsContainer {
+    border: solid black 3px;
+    width: 60%;
+    margin: 1vw 0 0 0;
+    padding: 2vw 1vw;
+}
