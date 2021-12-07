@@ -4,7 +4,7 @@ import "./DietView.css";
 
 function DietView() {
   const [mealData, setMealData] = useState(null);
-  const [calories, setCalories] = useState(null);
+  const [calories, setCalories] = useState(2000);
   const spoonacularkey = process.env.REACT_APP_SPOONACULAR_KEY;
 
   function getMealData() {
