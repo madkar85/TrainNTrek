@@ -4,6 +4,7 @@ import GetStarted from "../../components/getStarted/GetStarted"
 import Footer from "../../components/footer/Footer"
 import StravaApi from "../../shared/api/StravaApi"
 
+
 // Main and home view
 
 const HomeView = () => {

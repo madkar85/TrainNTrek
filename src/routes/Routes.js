@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/Navbar"
 import HomeView from "../view/homeview/HomeView"
 import LoginView from "../view/loginview/LoginView"
 import StatsView from "../view/statsview/StatsView"
+import GoalView from "../view/goalview/GoalView"
 import RoutingPath from "./RoutingPath"
 import { UserContext } from "../shared/provider/UserProvider"
 import BMIView from "../view/bmiview/BMIView"
@@ -48,6 +49,8 @@ const Routes = () => {
             exact
             path={RoutingPath.bmiView}
             component={blockRouteIfNotAuth(BMIView)}
+            path={RoutingPath.goalView}
+            component={blockRouteIfNotAuth(GoalView)}
           />
           <Route
             path={RoutingPath.homeView}
