@@ -16,3 +16,19 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
+.search-btn {
+  width: 20vw;
+  height: auto;
+  color: var(--clr-navy-blue);
+  border: solid var(--clr-black) 2px;
+  border-radius: 1em;
+  margin: auto;
+  cursor: pointer;
+  font-size: 4vw;
+  margin-bottom: 2vh;
+  background-color: var(--clr-grey-background);
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
+  box-shadow: 0 0 15px var(--clr-navy-blue);
+}
