@@ -47,10 +47,13 @@ const Routes = () => {
           />
           <Route
             exact
-            path={RoutingPath.bmiView}
-            component={blockRouteIfNotAuth(BMIView)}
             path={RoutingPath.goalView}
             component={blockRouteIfNotAuth(GoalView)}
+          />
+            <Route
+            exact
+            path={RoutingPath.bmiView}
+            component={blockRouteIfNotAuth(BMIView)}
           />
           <Route
             path={RoutingPath.homeView}
