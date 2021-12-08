@@ -1,8 +1,7 @@
 .dropdownMenu {
   display: inline-block;
-  margin-top: 1vh;
   height: 5vh;
-  width: 10vw;
+  width: auto;
   color: var(--clr-navy-blue);
   border: solid var(--clr-black) 2px;
   border-radius: 0.2em;
