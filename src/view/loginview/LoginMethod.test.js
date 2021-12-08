@@ -1,5 +1,4 @@
 const Register = require("./LoginMethod")
-
 const cases = [["Kalle", "Kalle123", "Kalle"]];
 
 describe("testing login method", () => {
