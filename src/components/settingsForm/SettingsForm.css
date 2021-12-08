@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  row-gap: 2vw;
+  row-gap: 3vw;
   column-gap: 1vw;
 }
 
@@ -14,7 +14,7 @@
 
 .inputBox {
   height: 2vw;
-  width: 16vw;
+  width: 10vw;
   font-size: 1.5rem;
 }
 
@@ -45,9 +45,9 @@
 #age,
 #length,
 #weight {
-  box-sizing: content-box;
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 
 #submitBox {
