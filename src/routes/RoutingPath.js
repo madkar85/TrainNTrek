@@ -7,7 +7,6 @@ const searchView = "/search"
 const bmiView = "/bmi"
 const goalView = "/goal"
 const settingsView = "/settings"
-const dietView = "/diet";
 
 export default {
   homeView,
@@ -17,5 +16,4 @@ export default {
   bmiView,
   goalView,
   settingsView,
-  dietView,
 }
