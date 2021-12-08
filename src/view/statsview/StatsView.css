@@ -20,9 +20,3 @@
 .stats {
   grid-area: stats;
 }
-
-.users {
-  grid-area: users;
-  margin-top: 2em;
-  margin-left: 5em;
-}

@@ -1,86 +1,88 @@
-form {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2vw;
-    column-gap: 1vw;
+#settingsForm {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2vw;
+  column-gap: 1vw;
 }
 
 .label {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .inputBox {
-    height: 2vw;
-    width: 16vw;
-    font-size: 1.5rem;
+  height: 2vw;
+  width: 16vw;
+  font-size: 1.5rem;
 }
 
 .field {
-    text-align: left;
-    padding: 1vw 0.5vw;
-    border: solid black 0.1vw;
-    border-radius: 2em;
-    box-shadow: 0 0 10px var(--clr-navy-blue);
+  text-align: left;
+  padding: 1vw 0.5vw;
+  border: solid black 0.1vw;
+  border-radius: 2em;
+  box-shadow: 0 0 10px var(--clr-navy-blue);
 }
 
 .genderField {
-    display: grid; 
-    border: solid black 0.1vw;
-    border-radius: 2em;
-    box-shadow: 0 0 10px var(--clr-navy-blue);
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 0.5vw;
-    margin: 0;
+  display: grid;
+  border: solid black 0.1vw;
+  border-radius: 2em;
+  box-shadow: 0 0 10px var(--clr-navy-blue);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0.5vw;
+  margin: 0;
 }
 
 .gender {
-    padding: 0.5vw;
-    font-size: 1.5rem;
+  padding: 0.5vw;
+  font-size: 1.5rem;
 }
 
-#age, #length, #weight {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
+#age,
+#length,
+#weight {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
 
 #submitBox {
-    text-align: center;
+  text-align: center;
 }
 
 .submitButton {
-    position: relative;
-    top: 2em;
-    width: 10vw;
-    height: auto;
-    color: var(--clr-navy-blue);
-    border: solid var(--clr-black) 2px;
-    border-radius: 1em;
-    margin: auto;
-    cursor: pointer;
-    font-size: 2.5vw;
-    margin-bottom: 2vh;
-    background-color: var(--clr-grey-background);
-    font-family: "Varela Round", sans-serif;
-    font-weight: 800;
-    box-shadow: 0 0 10px var(--clr-navy-blue);
-    }
+  position: relative;
+  top: 2em;
+  width: 10vw;
+  height: auto;
+  color: var(--clr-navy-blue);
+  border: solid var(--clr-black) 2px;
+  border-radius: 1em;
+  margin: auto;
+  cursor: pointer;
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+  background-color: var(--clr-grey-background);
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
+  box-shadow: 0 0 10px var(--clr-navy-blue);
+}
 
 .submitButton:hover {
-    background-color: var(--clr-grey-hover);
-  }
-  
-  .submitButton:active {
-    transform: scale(0.9);
-  }
+  background-color: var(--clr-grey-hover);
+}
 
-  p {
-      display: inline;
-      margin: 0;
-      padding: 0 0.3vw;
-      font-weight: bold;
-  }
+.submitButton:active {
+  transform: scale(0.9);
+}
+
+p {
+  display: inline;
+  margin: 0;
+  padding: 0 0.3vw;
+  font-weight: bold;
+}
