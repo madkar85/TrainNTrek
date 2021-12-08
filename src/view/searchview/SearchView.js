@@ -22,8 +22,8 @@ const SearchView = () => {
   }
 
   return (
+    <>
     <div className="searchView">
-        
       <section className="searchContainer">
       <h1>{searchedUser}</h1>
         <h2>Check a specific users activity. Type in the users name to check!</h2>
@@ -40,8 +40,9 @@ const SearchView = () => {
           </button>
         </div>
       </section>
-      <Footer />
     </div>
+    <Footer />
+    </>
   )
 }
 
