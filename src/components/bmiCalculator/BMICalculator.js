@@ -3,33 +3,17 @@ import "./BMICalculator.css"
 
 const BMICalculator = () => {
                           
-  const [text, settext] = useState();
+  const [text, setText] = useState();
   const [bmi, setBmi] = useState();
-  const [info, setInfo] = useState();
+  const [status, setStatus] = useState();
   const [infoText, setInfoText] = useState();
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
   const { CalculateBMI } = require("./CalculateBMI");
+  const { PrintBMIStatus } = require("./PrintInfo");
+  const { PrintBMIInfo } = require("./PrintInfo");
 
-  const PrintInfo = (val) => {
-      if (val < 18.5) {
-        setInfo("Under Weight");
-        setInfoText("Being underweight could be a sign you're not eating enough or you may be ill.");
-        return "Under Weight";
-      } else if (val > 18.5 && val <= 24.9) {
-        setInfo("Healthy weight");
-        setInfoText("Keep up the good work! For tips on maintaining a healthy weight, check out the diet and fitness sections.");
-        return "Healthy weight";
-      } else if (val > 24.9 && val < 30) {
-        setInfo("Overweight");
-        setInfoText("The best way to lose weight if you're overweight is through a combination of diet and exercise.");
-        return "Overweight";
-      } else {
-        setInfo("Obese");
-        setInfoText("The best way to lose weight if you're obese is through a combination of diet and exercise, and in some cases, medicines.");
-        return "Obese";
-      }
-  };
+  
 
   const handleBmi = () => {
     let value
@@ -45,8 +29,10 @@ const BMICalculator = () => {
     }
     value = CalculateBMI(weight,height);
     setBmi(value);
-    settext("Your BMI is: ");
-    PrintInfo(value); 
+    setText("Your BMI is: ");
+    let status = PrintBMIStatus(value);
+    setStatus(status);
+    setInfoText(PrintBMIInfo(status));
   };
   
   return (
@@ -70,7 +56,7 @@ const BMICalculator = () => {
     <button className="btn btn-block" onClick={handleBmi} > Calculate </button>
     <div>
     <h1 className="bmi-text">{text} {bmi}</h1>
-    <h3 className="bmi-text">{info}</h3>
+    <h3 className="bmi-text">{status}</h3>
     <div className="bmi-text">{infoText}</div>
     
     </div>
