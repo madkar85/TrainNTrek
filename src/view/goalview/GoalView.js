@@ -10,11 +10,19 @@ const GoalView = () => {
     return (
         <>
             <div className="goalView">
-                <section className="textField">
-                    <h1>Set your personal Goals!</h1>
-                    <GoalMenu />
-                    <GoalForm />
-                    <GoalResult />
+                <section className="componentField">
+                    <div className="headerText">
+                        <h2>Set your personal Goals!</h2>
+                    </div>
+                    <div className="activityMenu">
+                        <GoalMenu />
+                    </div>
+                    <div className="activityForm">
+                        <GoalForm />
+                    </div>
+                    <div className="activityGoals">
+                        <GoalResult />
+                    </div>
                 </section>
                 <Footer />
             </div>

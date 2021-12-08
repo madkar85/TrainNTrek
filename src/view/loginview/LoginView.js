@@ -4,11 +4,13 @@ import { useHistory, useLocation } from "react-router-dom"
 import "./LoginView.css"
 import Footer from "../../components/footer/Footer"
 import RoutingPath from "../../routes/RoutingPath"
-import Button from "@restart/ui/esm/Button"
+import Register from "./LoginMethod"
+
 
 // Login View, useEffect and HTTP-call is made inside of Weather component which is ran directly when loadning app.
 
 const LoginView = () => {
+  // const {login} = require("./LoginMethod")
   const history = useHistory()
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
@@ -22,12 +24,8 @@ const LoginView = () => {
     }
   }
 
-  const register = () => {
-    localStorage.setItem("username", username)
-    localStorage.setItem("password", password)
-  }
-
   return (
+    <>
     <div className="loginView">
       <section className="loginContainer">
         <h1>{location.state}</h1>
@@ -51,14 +49,15 @@ const LoginView = () => {
             <button className="btn" onClick={() => login()}>
               Login
             </button>
-            <button className="btn" onClick={() => register()}>
+            <button className="btn" onClick={() => Register(username, password)}>
               Register
             </button>
           </div>
         </div>
       </section>
-      <Footer />
     </div>
+          <Footer />
+    </>
   )
 }
 

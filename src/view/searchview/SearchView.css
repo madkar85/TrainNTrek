@@ -1,7 +1,8 @@
 .searchView {
   display: flex;
-  align-self: center;
+  text-align: center;
   justify-content: center;
+  min-height: 30vw;
 }
 
 .searchContainer {

@@ -16,4 +16,5 @@
 
 .textField {
   font-size: 1.5vw;
+  min-height: 25vw;
 }
