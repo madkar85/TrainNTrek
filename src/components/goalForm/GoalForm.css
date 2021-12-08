@@ -35,9 +35,6 @@ input {
 
 .distanceField {
   grid-area: distanceField;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .paceText {
