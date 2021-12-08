@@ -17,6 +17,7 @@
   grid-template-rows: 0.3fr 0.4fr 1fr;
   grid-template-columns: 1fr 1fr;
   font-size: 1.5vw;
+  align-items: center;
 }
 
 .headerText {
@@ -26,7 +27,6 @@
 .activityMenu {
   grid-area: activityMenu;
 }
-
 .activityForm {
   grid-area: activityForm;
   margin-left: 8vw;

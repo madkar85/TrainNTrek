@@ -3,6 +3,7 @@ import "./HomeView.css"
 import GetStarted from "../../components/getStarted/GetStarted"
 import Footer from "../../components/footer/Footer"
 import StravaApi from "../../shared/api/StravaApi"
+import ListOfUsers from "../../components/listOfUsers/ListOfUsers"
 
 
 // Main and home view
@@ -19,6 +20,9 @@ const HomeView = () => {
             Or press menu in the top right corner to see more statistics
           </h3>
           <GetStarted />
+          <div className="users">
+            <ListOfUsers />
+          </div>
         </section>
         <Footer />
       </div>
