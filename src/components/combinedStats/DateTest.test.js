@@ -1,4 +1,4 @@
-import DateTest from './DateTest';
+const DateTest = require('./DateTest.js');
 
 // test("See if function calculate correctly", () => {
 //     expect(DateTest("202108", "202005")).toBe(true);

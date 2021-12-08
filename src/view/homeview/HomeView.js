@@ -13,13 +13,13 @@ const HomeView = () => {
       <StravaApi textInfo={false} />
       <div className="homeView">
         <section className="textField">
-          <h2>
+          <h3>
             Welcome to TrekNTrain <br />
             Click button bellow to get most recent activity <br />
             Or press menu in the top right corner to see more statistics
-          </h2>
+          </h3>
+          <GetStarted />
         </section>
-        <GetStarted />
         <Footer />
       </div>
     </>
