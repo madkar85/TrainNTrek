@@ -4,7 +4,7 @@ on:
   push:
     branches: [elias, johan, linus, farzane, madde, dennis, tina]
   pull_request:
-    branches: [development, staging, master]
+    branches: [development, staging, master, revert-57-dennis]
 
 jobs:
   build:
