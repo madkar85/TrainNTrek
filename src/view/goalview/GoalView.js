@@ -12,6 +12,7 @@ const GoalView = () => {
             <div className="goalView">
                 <section className="textField">
                     <h1>Set your personal Goals!</h1>
+                    <GoalMenu />
                     <GoalForm />
                     <GoalResult />
                 </section>
