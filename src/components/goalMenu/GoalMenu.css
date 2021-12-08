@@ -1,8 +1,7 @@
 .dropdownMenu {
   display: inline-block;
-  position: relative;
   height: 5vh;
-  width: 10vw;
+  width: auto;
   color: var(--clr-navy-blue);
   border: solid var(--clr-black) 2px;
   border-radius: 0.2em;
@@ -12,6 +11,10 @@
   font-family: "Varela Round", sans-serif;
   font-weight: 600;
   box-shadow: 0 0 10px var(--clr-navy-blue);
+}
+
+.dropdownMenu p {
+  margin: auto;
 }
 
 .dropdownMenu:hover .dropdown-content {
