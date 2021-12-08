@@ -15,12 +15,22 @@ const LoginView = () => {
   const location = useLocation()
 
   const login = () => {
-    setAuthenticatedUser(username)
+    if(localStorage.getItem("username") == username){
+      setAuthenticatedUser(username)
+      history.push(RoutingPath.homeView)
+    }
+  }
+
+  const register = () => {
     localStorage.setItem("username", username)
-    history.push(RoutingPath.homeView)
+    localStorage.setItem("password", password)
+    if(username != null && password != null){
+      alert('You are registerd.');
+    }
   }
 
   return (
+    <>
     <div className="loginView">
       <section className="loginContainer">
         <h1>{location.state}</h1>
@@ -40,13 +50,19 @@ const LoginView = () => {
             />
           </div>
           <br />
-          <button className="login-btn" onClick={() => login()}>
-            Login
-          </button>
+          <div className="loginButtons">
+            <button className="btn" onClick={() => login()}>
+              Login
+            </button>
+            <button className="btn" onClick={() => register()}>
+              Register
+            </button>
+          </div>
         </div>
       </section>
-      <Footer />
     </div>
+          <Footer />
+    </>
   )
 }
 

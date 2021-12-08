@@ -8,3 +8,21 @@
   margin-top: 2em;
   font-family: "Varela Round", sans-serif;
 }
+
+.statSection {
+  display: grid;
+  grid-template-areas: "stats users";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stats {
+  grid-area: stats;
+}
+
+.users {
+  grid-area: users;
+  margin-top: 2em;
+  margin-left: 5em;
+}
