@@ -26,7 +26,6 @@
 .activityMenu {
   grid-area: activityMenu;
 }
-
 .activityForm {
   grid-area: activityForm;
   margin-left: 8vw;

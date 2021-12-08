@@ -15,6 +15,7 @@
   box-shadow: 0 0 10px grey;
   margin-top: 1em;
   font-size: 0.8vw;
+  padding: 1em;
 }
 
 .header1 {
@@ -31,11 +32,17 @@
 
 .goalType {
   grid-area: type;
+  padding-top: 4vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5vh;
   font-weight: bold;
   font-size: 1.5em;
 }
 
 .goalValue {
   grid-area: goal;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   font-size: 1.5em;
 }
