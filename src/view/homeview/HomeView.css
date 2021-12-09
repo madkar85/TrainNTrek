@@ -3,25 +3,38 @@
 .homeView {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   font-family: "Varela Round", sans-serif;
   text-align: center;
   min-height: 28vw;
+  margin-top: 2vw;
 }
 
-.textField {
+.textField h3 {
   font-size: 1.5vw;
-  margin: 1vh 0 0 0;
+  width: 34vw;
+  margin: 2vw auto;
 }
+
 
 #h2Home{
   font-family: "Varela Round", sans-serif;
   font-size: 3vw;
   text-align: center;
-  margin: 2vh 0 0 0;
+  margin: 1vh 0 0 0;
 }
 
 .users{
-  padding: 1vh;
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr ;
+  
+}
+
+.users ul{
+  margin: 0 auto;
+  height: 15em;
+}
+
+.users ul li{
+  height: 2em;
 }
