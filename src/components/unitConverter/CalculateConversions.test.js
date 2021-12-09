@@ -70,3 +70,22 @@ describe("Converting from pound to kilo", () => {
     expect(ConvertPoundToKilo(a)).toBe(expected);
   });
 });
+
+describe("Integration test for the unit converter", () => {
+  test('Testing all the methods together', () => {
+    let mockUserInput = 100
+    let conversionResult
+
+    conversionResult = ConvertKmPerHourToMeterPerSecond(mockUserInput) // 27.78
+    conversionResult = ConvertMeterPerSecondToKmPerHour(conversionResult) // 100.01
+    conversionResult = ConvertKmToMiles(conversionResult) // 62.14
+    conversionResult = ConvertMilesToKm(conversionResult) // 100
+    conversionResult = ConvertKiloToPound(conversionResult) // 220,46
+    conversionResult = ConvertPoundToKilo(conversionResult) // 100
+
+
+
+    expect(conversionResult).toBeCloseTo(100)
+   
+});
+})
