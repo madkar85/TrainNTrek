@@ -8,18 +8,18 @@ const SettingsForm = () => {
                 <div class="field">
                     <label className="label" for="name">Name </label>
                     <br />
-                    <input className="inputBox" type="text" id="name" name="name" placeholder="Enter fullname" />
+                    <input className="inputBox" type="text" id="name" name="name" />
                 </div>
                 <div class="genderField">
                     <label className="label">Gender</label>
                     <br />
                     <label className="gender">Female</label> <input className="genderInput" type="checkbox" name="gender" value="Female" />
                     <label className="gender"> Male</label><input className="genderInput" type="checkbox" name="gender" value="Male" />
-                    <label className="gender">None</label><input type="checkbox" name="gender" value="NonBinary" />
+                    <label className="gender">None</label><input className="genderInput" type="checkbox" name="gender" value="NonBinary" />
                 </div>
                 <div class="field">
                     <label className="label" for="age">Age<br /></label>
-                    <input className="inputBox" type="numbers" id="age" name="age" placeholder="YYYY " />
+                    <input className="inputBox" type="numbers" id="age" name="age" />
                     <p>Y/O</p>
                 </div>
                 <div class="field">

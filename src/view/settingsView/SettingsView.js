@@ -9,8 +9,8 @@ const SettingsView  = () => {
                 <h1 id="settingsH1">SETTINGS</h1>
                 <SettingsForm />
             </section>
-            <Footer />
         </div>
+        <Footer />
     </>
    )}
 

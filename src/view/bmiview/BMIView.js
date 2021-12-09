@@ -9,7 +9,7 @@ const BMIView = () => {
     return (
         <>
             <div className="bmiView">
-               <section className="textField">
+               <section className="bmiTextField">
                     <BMICalculator />
                </section>
                <Footer />

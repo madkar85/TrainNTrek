@@ -1,9 +1,9 @@
 .settingsView {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: "Varela Round", sans-serif;
+    min-height: 33vw;
 }
 
 #settingsH1 {
@@ -13,9 +13,10 @@
 }
 
 #settingsContainer {
+    align-items: center;
     border: solid black 3px;
     border-radius: 0.4em;
     width: 50%;
-    margin: 1vw 0 0 0;
-    padding: 2em 1em;
+    padding: 1em;
+    margin: 1em 0 0 0;
 }
