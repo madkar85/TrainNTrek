@@ -19,8 +19,8 @@ const SearchView = () => {
   localStorage.setItem("Linus", "He is online, took a long walk 5 minutes ago!")
 
   return (
+    <>
     <div className="searchView">
-        
       <section className="searchContainer">
       <h1>{searchedUser}</h1>
         <h2>Check a specific users activity!</h2>
@@ -37,8 +37,9 @@ const SearchView = () => {
           </button>
         </div>
       </section>
-      <Footer />
     </div>
+    <Footer />
+    </>
   )
 }
 

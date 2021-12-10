@@ -25,23 +25,20 @@ const HamburgerMenu = () => {
         <Link to={RoutingPath.homeView}>
           <li> Home </li>
         </Link>
-        <br />
         <Link to={RoutingPath.statsView}>
           <li> Stats </li>
         </Link>
-        <br />
         <Link to={RoutingPath.searchView}>
           <li> Search</li>
         </Link>
-        <br />
         <Link to={RoutingPath.bmiView}>
           <li> BMI calculator </li>
         </Link>
-        <br />
         <Link to={RoutingPath.goalView}>
           <li> Goal </li>
         </Link>
-        <br />
+        <Link to={RoutingPath.settingsView}>
+          <li> Settings </li></Link>
         <li onClick={() => logout()}>Logout</li>
       </div>
     </div>

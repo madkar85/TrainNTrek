@@ -5,10 +5,36 @@
   width: 100%;
   align-items: center;
   text-align: center;
-  margin-top: 2em;
   font-family: "Varela Round", sans-serif;
 }
 
-.textField {
+.componentField {
+  display: grid;
+  grid-template-areas:
+    "headerText headerText"
+    "activityMenu activityMenu"
+    "activityForm activityGoals";
+  grid-template-rows: 0.3fr 0.4fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 1.5vw;
+}
+
+.headerText {
+  grid-area: headerText;
+}
+
+.activityMenu {
+  grid-area: activityMenu;
+}
+
+.activityForm {
+  grid-area: activityForm;
+  margin-left: 8vw;
+  margin-top: 4vh;
+}
+
+.activityGoals {
+  grid-area: activityGoals;
+  margin-right: 8vw;
+  margin-top: 4vh;
 }
