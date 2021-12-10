@@ -1,13 +1,5 @@
 {
   "name": "trekntrain",
-  "jest": {
-    "testMatch" : [
-      "<rootDir>/src/**/*.test.js",
-      "<rootDir>/src/**/*.test.jsx"
-    ]
-     
-  },
-
   "version": "0.1.0",
   "private": true,
   "dependencies": {
