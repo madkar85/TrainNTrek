@@ -15,7 +15,7 @@ const SearchView = () => {
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
   const location = useLocation()
   localStorage.setItem("Elias", "He is online, and taking a walk!")
-  localStorage.setItem("Madde", "She is offline, but took a new biking path 1 hour ago!")
+  localStorage.setItem("Markoolio", "Hen is offline, tried a new biking path 1 hour ago!")
   localStorage.setItem("Linus", "He is online, took a long walk 5 minutes ago!")
 
   return (
@@ -23,20 +23,11 @@ const SearchView = () => {
     <div className="searchView">
       <section className="searchContainer">
       <h1>{searchedUser}</h1>
-<<<<<<< HEAD
         <h2>Check a specific users activity!</h2>
         <div className="inputArea">
           <div>
             <input
               placeholder="Type in username"
-=======
-        <h2>Check a specific users activity. Type in the users name to check!</h2>
-        <div className="searchInputArea">
-          <div>
-            <input
-            id="searchInput"
-              placeholder="Username"
->>>>>>> development
               onChange={(event) => setUser(event.target.value)}
             />
           </div>
