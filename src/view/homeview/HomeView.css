@@ -1,20 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 .homeView {
-  height: 70vh;
   width: 100%;
   display: grid;
-  grid-template-areas:
-    "text"
-    "button"
-    "activityBox";
-  grid-template-rows: 0.1fr 0.15fr 0.2fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   font-family: "Varela Round", sans-serif;
   text-align: center;
+  min-height: 28vw;
+  margin-top: 2vw;
 }
 
-.textField {
+.textField h3 {
   font-size: 1.5vw;
-  min-height: 25vw;
+  width: 34vw;
+  margin: 2vw auto;
+}
+
+
+#h2Home{
+  font-family: "Varela Round", sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin: 1vh 0 0 0;
+}
+
+.users{
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr ;
+  
+}
+
+.users ul{
+  margin: 0 auto;
+  height: 15em;
+}
+
+.users ul li{
+  height: 2em;
 }

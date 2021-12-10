@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   font-family: "Varela Round", sans-serif;
+  min-height: 35vw;
 }
 
 .componentField {

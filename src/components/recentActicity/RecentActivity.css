@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40vw;
-  height: auto;
+  width: 30vw;
+  height: 14vw;
   border: solid black 2px;
   background-color: #f05454;
   margin: auto;
@@ -32,6 +32,6 @@
 .info {
   width: 30vw;
   height: auto;
-  font-size: 1.2vw;
+  font-size: 1vw;
   text-align: center;
 }

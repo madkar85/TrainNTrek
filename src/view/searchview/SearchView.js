@@ -23,22 +23,29 @@ const SearchView = () => {
     <div className="searchView">
       <section className="searchContainer">
       <h1>{searchedUser}</h1>
+<<<<<<< HEAD
         <h2>Check a specific users activity!</h2>
         <div className="inputArea">
           <div>
             <input
               placeholder="Type in username"
+=======
+        <h2>Check a specific users activity. Type in the users name to check!</h2>
+        <div className="searchInputArea">
+          <div>
+            <input
+            id="searchInput"
+              placeholder="Username"
+>>>>>>> development
               onChange={(event) => setUser(event.target.value)}
             />
           </div>
-          <br />
           <button className="search-btn" onClick={() => setSearchedUser(search(user))}>
             Search
           </button>
         </div>
       </section>
     </div>
-    <Footer />
     </>
   )
 }

@@ -6,7 +6,7 @@ import ActivityCard from "../../components/activityCard/ActivityCard"
 import { StatsContext } from "../../shared/provider/StatsProvider"
 import { useHistory } from "react-router-dom"
 import RoutingPath from "../../routes/RoutingPath"
-import ListOfUsers from "../../components/listOfUsers/ListOfUsers"
+
 import UnitConverter from "../../components/unitConverter/UnitConverter"
 
 // Statistics View
@@ -25,14 +25,13 @@ const StatsView = () => {
             <ActivityCard />
           </div>
           <section className="statSection">
-          <div className="users">
-          <ListOfUsers />
-          </div>
-          <div className="stats">
-          <CombinedStats />
-          </div>
+            <div className="stats">
+              <CombinedStats />
+            </div>
+            <div className="converter">
+            <UnitConverter />
+            </div>
           </section>
-          <UnitConverter />
           <Footer />
         </>
       )
