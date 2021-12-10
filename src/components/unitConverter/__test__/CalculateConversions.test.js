@@ -1,9 +1,9 @@
-const { ConvertKmPerHourToMeterPerSecond } = require("./CalculateConversions");
-const { ConvertMeterPerSecondToKmPerHour } = require("./CalculateConversions");
-const { ConvertKmToMiles } = require("./CalculateConversions");
-const { ConvertMilesToKm } = require("./CalculateConversions");
-const { ConvertKiloToPound } = require("./CalculateConversions");
-const { ConvertPoundToKilo } = require("./CalculateConversions");
+const { ConvertKmPerHourToMeterPerSecond } = require("../CalculateConversions");
+const { ConvertMeterPerSecondToKmPerHour } = require("../CalculateConversions");
+const { ConvertKmToMiles } = require("../CalculateConversions");
+const { ConvertMilesToKm } = require("../CalculateConversions");
+const { ConvertKiloToPound } = require("../CalculateConversions");
+const { ConvertPoundToKilo } = require("../CalculateConversions");
 
 describe("Converting from km/h to m/s", () => {
   test.each([
