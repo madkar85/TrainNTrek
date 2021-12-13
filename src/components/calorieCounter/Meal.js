@@ -9,7 +9,6 @@ export default function Table(props) {
         <td>{props.meal.calorie}</td>
         <td>
           <FaTrash onClick={props.onDelete} className="mr-4" />
-          <FaEdit />
         </td>
       </tr>
     </React.Fragment>

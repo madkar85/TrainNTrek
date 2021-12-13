@@ -6,29 +6,29 @@ const SettingsForm = () => {
         <>
             <form id="settingsForm">
                 <div class="field">
-                    <label className="label" for="name">Name </label>
+                    <label className="label" for="name">Name:</label>
                     <br />
                     <input className="inputBox" type="text" id="name" name="name" />
                 </div>
                 <div class="genderField">
-                    <label className="label">Gender</label>
+                    <label className="label">Gender:</label>
                     <br />
                     <label className="gender">Female</label> <input className="genderInput" type="checkbox" name="gender" value="Female" />
                     <label className="gender"> Male</label><input className="genderInput" type="checkbox" name="gender" value="Male" />
                     <label className="gender">None</label><input className="genderInput" type="checkbox" name="gender" value="NonBinary" />
                 </div>
                 <div class="field">
-                    <label className="label" for="age">Age<br /></label>
+                    <label className="label" for="age">Age:<br /></label>
                     <input className="inputBox" type="numbers" id="age" name="age" />
                     <p>Y/O</p>
                 </div>
                 <div class="field">
-                    <label className="label" for="weight">Weight<br /></label>
+                    <label className="label" for="weight">Weight:<br /></label>
                     <input className="inputBox" type="numbers" id="weight" name="wight" />
                     <p>KG</p>
                 </div>
                 <div class="field">
-                    <label className="label" for="length">Length<br /></label>
+                    <label className="label" for="length">Length:<br /></label>
                     <input className="inputBox" type="numbers" id="length" name="length" />
                     <p>CM</p>
                 </div>

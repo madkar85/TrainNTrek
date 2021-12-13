@@ -2,14 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2vw;
-  min-height: 30em;
+  gap: 0.5vw 2vw;
+  min-height: 20em;
+  box-shadow: 0 0 10px var(--clr-navy-blue);
+  border-radius: 0.8em;
+  padding: 2vw;
 }
 
 .label {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 0;
+    margin: 0.5vw auto;
 }
 
 .inputBox {
@@ -20,26 +23,23 @@
 
 .field {
     text-align: left;
-    padding: 1vw 0.5vw;
-    box-shadow: 0 0 10px var(--clr-navy-blue);
     border-radius: 0.8em;
-    height: 100%;
-    width: 100%;
+    margin: 0.5vw auto;
+    height: 10vw;
 }
 
 .genderField {
     display: grid; 
-    box-shadow: 0 0 10px var(--clr-navy-blue);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
     width: 100%;
-    padding: 1vw;
+    height: 10vw;
     border-radius: 0.8em;
 }
 
 .gender {
     font-size: 1rem;
+    margin: 0.5vw auto;
 }
 
 .genderInput {
@@ -55,8 +55,9 @@
 
 #submitBox {
     text-align: center;
-    box-shadow: 0 0 10px var(--clr-navy-blue);
     border-radius: 0.8em;
+    margin: 0.5vw auto;
+    height: 10vw;
 }
 
 .submitButton {
