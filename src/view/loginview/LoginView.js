@@ -9,7 +9,6 @@ import Register from './LoginMethod'
 // Login View, useEffect and HTTP-call is made inside of Weather component which is ran directly when loadning app.
 
 const LoginView = () => {
-  // const {login} = require("./LoginMethod")
   const history = useHistory()
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
@@ -17,7 +16,7 @@ const LoginView = () => {
   const location = useLocation()
 
   const login = () => {
-    if (localStorage.getItem('username') == username) {
+    if (localStorage.getItem('username') === username) {
       setAuthenticatedUser(username)
       history.push(RoutingPath.homeView)
     } else {

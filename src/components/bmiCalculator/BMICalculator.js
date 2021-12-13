@@ -13,7 +13,7 @@ const BMICalculator = () => {
   const { PrintBMIInfo } = require('./PrintInfo')
 
   const handleBmi = () => {
-    let value
+    const value = 0
     if (weight == null || height == null) {
       alert('Woops, the field can not be blank. Please enter a value ')
       return 'value is not valid'

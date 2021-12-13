@@ -1,10 +1,9 @@
-
-function search (user) {
-  let userInfo = (localStorage.getItem(user))
+function search(user) {
+  let userInfo = localStorage.getItem(user);
   if (userInfo == null) {
-    userInfo = "User doesn't exist!"
+    userInfo = "User doesn't exist!";
   }
-  return userInfo
+  return userInfo;
 }
 
-module.exports = search
+module.exports = search;

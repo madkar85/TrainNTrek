@@ -16,17 +16,17 @@ const UnitConverter = () => {
     let result
 
     if (unitOne >= 0) {
-      if (selectedOption == 'km/h to m/s') {
+      if (selectedOption === 'km/h to m/s') {
         result = ConvertKmPerHourToMeterPerSecond(unitOne)
-      } else if (selectedOption == 'm/s to km/h') {
+      } else if (selectedOption === 'm/s to km/h') {
         result = ConvertMeterPerSecondToKmPerHour(unitOne)
-      } else if (selectedOption == 'km to miles') {
+      } else if (selectedOption === 'km to miles') {
         result = ConvertKmToMiles(unitOne)
-      } else if (selectedOption == 'miles to km') {
+      } else if (selectedOption === 'miles to km') {
         result = ConvertMilesToKm(unitOne)
-      } else if (selectedOption == 'kilo to pound') {
+      } else if (selectedOption === 'kilo to pound') {
         result = ConvertKiloToPound(unitOne)
-      } else if (selectedOption == 'pound to kilo') {
+      } else if (selectedOption === 'pound to kilo') {
         result = ConvertPoundToKilo(unitOne)
       }
 

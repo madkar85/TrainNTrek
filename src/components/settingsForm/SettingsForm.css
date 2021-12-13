@@ -21,7 +21,6 @@
 .field {
   text-align: left;
   padding: 1vw 0.5vw;
-
   box-shadow: 0 0 10px var(--clr-navy-blue);
   height: 100%;
   width: 100%;
@@ -30,7 +29,6 @@
 
 .genderField {
   display: grid;
-
   box-shadow: 0 0 10px var(--clr-navy-blue);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
