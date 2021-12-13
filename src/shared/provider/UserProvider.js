@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext } from 'react'
 
-//Provider for userinfo
+// Provider for userinfo
 
 export const UserContext = createContext()
 

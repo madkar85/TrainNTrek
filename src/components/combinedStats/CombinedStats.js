@@ -1,7 +1,7 @@
-import React, { useContext } from "react"
-import { StatsContext } from "../../shared/provider/StatsProvider"
-import "./CombinedStats.css"
-import DateTest from "./DateTest"
+import React, { useContext } from 'react'
+import { StatsContext } from '../../shared/provider/StatsProvider'
+import './CombinedStats.css'
+import DateTest from './DateTest'
 
 // Combined stats from past month showed on the statistics page
 
@@ -10,13 +10,13 @@ const CombinedStats = () => {
   let runDistance = 0
   let rideDistance = 0
   let activeTime = 0
-  let currentTime = new Date()
-  let oneMonthBack = new Date()
+  const currentTime = new Date()
+  const oneMonthBack = new Date()
 
   // Logging against the past 4 months due to inactivity
   oneMonthBack.setMonth(currentTime.getMonth() - 4)
-  let oneMonthBackJson = oneMonthBack.toJSON()
-  let oneMonthBackYearAndMonth =
+  const oneMonthBackJson = oneMonthBack.toJSON()
+  const oneMonthBackYearAndMonth =
     oneMonthBackJson.substring(0, 4) +
     oneMonthBackJson.substring(5, 7) +
     oneMonthBackJson.substring(8, 10)
@@ -32,13 +32,13 @@ const CombinedStats = () => {
     activityDate.toString()
 
     if (
-      activity.type === "Run" &&
+      activity.type === 'Run' &&
       DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth)
     ) {
       runDistance = runDistance + activity.distance
     }
     if (
-      activity.type === "Ride" &&
+      activity.type === 'Ride' &&
       DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth)
     ) {
       rideDistance = rideDistance + activity.distance
@@ -48,7 +48,7 @@ const CombinedStats = () => {
     }
   })
 
-  DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth);
+  DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth)
 
   // function DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth) {
   //   if (activityDateYearAndMonth > oneMonthBackYearAndMonth) return true
@@ -56,7 +56,7 @@ const CombinedStats = () => {
   // }
 
   return (
-    <div className="statsContainer">
+    <div className='statsContainer'>
       <h1>This is your statisticts for one month back</h1>
       <h2> Distance ran this month: {Math.round(runDistance / 1000)} km</h2>
       <h2>
