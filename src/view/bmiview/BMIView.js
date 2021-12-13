@@ -12,8 +12,8 @@ const BMIView = () => {
                <section className="bmiTextField">
                     <BMICalculator />
                </section>
-               <Footer />
             </div>
+            <Footer />
         </>
     )
 }

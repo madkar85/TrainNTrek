@@ -36,9 +36,9 @@ const GoalResult = () => {
                 <p> Activity time: </p>
             </div>
             <div className="goalValue">
-                <p> 1/{DistanceGoal()} </p>
-                <p> 12/{PaceGoal()} </p>
-                <p> 15/{TimeGoal()} </p>
+                <p> 1/{DistanceGoal()} km</p>
+                <p> 12/{PaceGoal()} km/h</p>
+                <p> 15/{TimeGoal()} min</p>
             </div>
         </div>
     )

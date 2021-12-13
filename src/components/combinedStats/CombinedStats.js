@@ -57,7 +57,7 @@ const CombinedStats = () => {
 
   return (
     <div className="statsContainer">
-      <h1>This is your statisticts for one month back</h1>
+      <h1>This is your statistics for one month back</h1>
       <h2> Distance ran this month: {Math.round(runDistance / 1000)} km</h2>
       <h2>
         Distance bicycled this month: {Math.round(rideDistance / 1000)} km

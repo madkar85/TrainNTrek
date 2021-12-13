@@ -3,7 +3,7 @@
 .cardGrid {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .activityCards {
@@ -12,12 +12,11 @@
   align-items: center;
   width: 22vw;
   height: auto;
-  border: solid black 4px;
+  box-shadow: 0 0 15px var(--clr-navy-blue);
   background-color: #f05454;
-  margin: auto;
+  margin: 0 0.8vw;
   border-radius: 0.8em;
   font-family: "Varela Round", sans-serif;
-  box-shadow: 0 0 10px grey;
   margin-top: 1em;
 }
 

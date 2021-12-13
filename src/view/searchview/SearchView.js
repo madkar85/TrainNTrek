@@ -23,12 +23,12 @@ const SearchView = () => {
     <div className="searchView">
       <section className="searchContainer">
       <h1>{searchedUser}</h1>
-        <h2>Check a specific users activity. Type in the users name to check!</h2>
+        <h2>Check a specific users activity.</h2>
         <div className="searchInputArea">
           <div>
             <input
             id="searchInput"
-              placeholder="Username"
+              placeholder="Type in the username.."
               onChange={(event) => setUser(event.target.value)}
             />
           </div>

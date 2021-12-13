@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1vw;
+  gap: 2vw;
   min-height: 30em;
 }
 
@@ -21,22 +21,21 @@
 .field {
     text-align: left;
     padding: 1vw 0.5vw;
-
     box-shadow: 0 0 10px var(--clr-navy-blue);
+    border-radius: 0.8em;
     height: 100%;
     width: 100%;
-    padding: 1vw;
 }
 
 .genderField {
     display: grid; 
-
     box-shadow: 0 0 10px var(--clr-navy-blue);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
     padding: 1vw;
+    border-radius: 0.8em;
 }
 
 .gender {
@@ -56,6 +55,8 @@
 
 #submitBox {
     text-align: center;
+    box-shadow: 0 0 10px var(--clr-navy-blue);
+    border-radius: 0.8em;
 }
 
 .submitButton {
@@ -65,10 +66,10 @@
     height: auto;
     color: var(--clr-navy-blue);
     border: solid var(--clr-black) 2px;
-    border-radius: 1em;
+    border-radius: 0.5em;
     margin: auto;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 2vh;
     background-color: var(--clr-grey-background);
     font-family: "Varela Round", sans-serif;

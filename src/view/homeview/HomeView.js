@@ -17,8 +17,7 @@ const HomeView = () => {
       <div className="homeView">
         <section className="textField">
           <h3>
-            Click button bellow to get most recent activity <br />
-            Or press menu in the top right corner to see more statistics
+            Click button below to get most recent activity.
           </h3>
           <GetStarted />
           </section>

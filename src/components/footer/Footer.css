@@ -5,8 +5,7 @@
   height: auto;
   text-align: end;
   justify-content: end;
-  align-items: center;
-  position: static;
+  position: absolute;
   bottom: 0;
 }
 

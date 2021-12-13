@@ -31,11 +31,9 @@
 .activityForm {
   grid-area: activityForm;
   margin-left: 8vw;
-  margin-top: 4vh;
 }
 
 .activityGoals {
   grid-area: activityGoals;
   margin-right: 8vw;
-  margin-top: 4vh;
 }

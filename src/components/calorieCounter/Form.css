@@ -38,14 +38,14 @@
 }
 
 .addButton{
-  width: 12vw;  
+  width: 10vw;  
   height: auto;
   margin: 1vw 0;
   color: var(--clr-navy-blue);
   border: solid var(--clr-black) 2px;
   border-radius: 0.4em;
   cursor: pointer;
-  font-size: 2vw;
+  font-size: 1.5vw;
   background-color: var(--clr-grey-background);
   font-family: "Varela Round", sans-serif;
   font-weight: 800;
