@@ -6,13 +6,16 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import Linusbild from '../../shared/img/Linus.jpg'
+import Markooliobild from '../../shared/img/markoolio.JPG'
+import Eliasbild from '../../shared/img/IkeaGlassOP.jpg'
 
 export default function AlignItemsList() {
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Elias äter glass" src={Eliasbild} />
         </ListItemAvatar>
         <ListItemText
           primary="Update"
@@ -34,7 +37,7 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Bild på Markoolio" src={Markooliobild} />
         </ListItemAvatar>
         <ListItemText
           primary="Update"
@@ -46,7 +49,7 @@ export default function AlignItemsList() {
                 variant="body2"
                 color="text.primary"
               >
-                Madde
+                Markoolio
               </Typography>
               {" — This new biking path is sick!"}
             </React.Fragment>
@@ -56,7 +59,7 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+          <Avatar alt="Bild på Linus" src={Linusbild} />
         </ListItemAvatar>
         <ListItemText
           primary="Update"
