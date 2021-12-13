@@ -1,9 +1,9 @@
-import React from "react";
-import { FaTrash, FaEdit } from "react-icons/fa";
+import React from 'react'
+import { FaTrash, FaEdit } from 'react-icons/fa'
 
-export default function Table(props) {
+export default function Table (props) {
   return (
-    <React.Fragment>
+    <>
       <tr>
         <td>{props.meal.text}</td>
         <td>{props.meal.calorie}</td>
@@ -11,6 +11,6 @@ export default function Table(props) {
           <FaTrash onClick={props.onDelete} className="mr-4" />
         </td>
       </tr>
-    </React.Fragment>
-  );
+    </>
+  )
 }

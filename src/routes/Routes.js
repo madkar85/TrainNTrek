@@ -1,37 +1,37 @@
-import React, { useContext, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "../components/navbar/Navbar";
-import HomeView from "../view/homeview/HomeView";
-import LoginView from "../view/loginview/LoginView";
-import StatsView from "../view/statsview/StatsView";
-import SearchView from "../view/searchview/SearchView";
-import GoalView from "../view/goalview/GoalView";
-import SettingsView from "../view/settingsView/SettingsView";
-import CalorieView from "../view/calorieview/CalorieView";
-import RoutingPath from "./RoutingPath";
-import { UserContext } from "../shared/provider/UserProvider";
-import BMIView from "../view/bmiview/BMIView";
+import React, { useContext, useEffect } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from '../components/navbar/Navbar'
+import HomeView from '../view/homeview/HomeView'
+import LoginView from '../view/loginview/LoginView'
+import StatsView from '../view/statsview/StatsView'
+import SearchView from '../view/searchview/SearchView'
+import GoalView from '../view/goalview/GoalView'
+import SettingsView from '../view/settingsView/SettingsView'
+import CalorieView from '../view/calorieview/CalorieView'
+import RoutingPath from './RoutingPath'
+import { UserContext } from '../shared/provider/UserProvider'
+import BMIView from '../view/bmiview/BMIView'
 
 // Routes and authorisation mechanism
 
 const Routes = () => {
-  const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext);
+  const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
   const blockRouteIfAuth = (viewNavigation) => {
-    return authenticatedUser ? HomeView : viewNavigation;
-  };
+    return authenticatedUser ? HomeView : viewNavigation
+  }
 
   const blockRouteIfNotAuth = (viewNavigation) => {
-    return !authenticatedUser ? LoginView : viewNavigation;
-  };
+    return !authenticatedUser ? LoginView : viewNavigation
+  }
 
   const checkAuthenticatedUserInBrowser = () => {
-    setAuthenticatedUser(localStorage.getItem("username"));
-  };
+    setAuthenticatedUser(localStorage.getItem('username'))
+  }
 
   useEffect(() => {
-    checkAuthenticatedUserInBrowser();
-  }, []);
+    checkAuthenticatedUserInBrowser()
+  }, [])
 
   return (
     <Router>
@@ -80,7 +80,7 @@ const Routes = () => {
         </Switch>
       </div>
     </Router>
-  );
-};
+  )
+}
 
-export default Routes;
+export default Routes

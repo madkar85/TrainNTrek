@@ -1,17 +1,18 @@
 .tag {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #btns {
-    width: 100%;
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    margin: 1vw 0;
-  }
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: 1vw 0;
+}
 
-.saveBtn, .cancelBtn {
-  width: 8em;  
+.saveBtn,
+.cancelBtn {
+  width: 8em;
   height: 2em;
   color: var(--clr-navy-blue);
   border: solid var(--clr-black) 2px;
@@ -31,7 +32,7 @@
   gap: 1em 0em;
 }
 
-.dietForm{
+.dietForm {
   display: grid;
   justify-content: center;
   grid-template-rows: 1fr 1fr;

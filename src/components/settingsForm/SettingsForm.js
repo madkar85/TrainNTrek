@@ -1,4 +1,4 @@
-import "./SettingsForm.css"
+import './SettingsForm.css'
 
 const SettingsForm = () => {
 

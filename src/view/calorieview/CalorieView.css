@@ -1,7 +1,7 @@
 .dietContainer {
-    min-height: 30vw;
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
+  min-height: 30vw;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
 }
 
 .jumbotron {
@@ -11,7 +11,4 @@
     box-shadow: 0 0 10px var(--clr-navy-blue);
     border-radius: 0.4em;
     padding: 1em;
-}
-.claorieHeaderText {
-    font-size: 2.5vw;
 }

@@ -47,5 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
 }

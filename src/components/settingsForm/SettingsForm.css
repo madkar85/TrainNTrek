@@ -1,4 +1,4 @@
-#settingsForm{
+#settingsForm {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -16,9 +16,9 @@
 }
 
 .inputBox {
-    height: 1.5vw;
-    width: 8vw;
-    font-size: 1.5rem;
+  height: 1.5vw;
+  width: 8vw;
+  font-size: 1.5rem;
 }
 
 .field {
@@ -43,14 +43,16 @@
 }
 
 .genderInput {
-    height: 1.5vw;
-    width: 1.5vw;
+  height: 1.5vw;
+  width: 1.5vw;
 }
 
-#age, #length, #weight {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
+#age,
+#length,
+#weight {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
 
 #submitBox {
@@ -79,16 +81,16 @@
     }
 
 .submitButton:hover {
-    background-color: var(--clr-grey-hover);
-  }
-  
-  .submitButton:active {
-    transform: scale(0.9);
-  }
+  background-color: var(--clr-grey-hover);
+}
 
-  p {
-      display: inline;
-      margin: 0;
-      padding: 0 0.3vw;
-      font-weight: bold;
-  }
+.submitButton:active {
+  transform: scale(0.9);
+}
+
+p {
+  display: inline;
+  margin: 0;
+  padding: 0 0.3vw;
+  font-weight: bold;
+}
