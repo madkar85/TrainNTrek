@@ -27,7 +27,7 @@ jobs:
         env:
           CI: false
       - name: Super-Linter
-        uses: github/super-linter/slim@v4
+        uses: github/super-linter@v4.8.1
         env:
           FILTER_REGEX_EXCLUDE: "(.*Migrations/.*|/.github/)"
 
