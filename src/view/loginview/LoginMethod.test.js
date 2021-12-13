@@ -1,7 +1,7 @@
 const Register = require("./LoginMethod")
 const cases = [["Kalle", "Kalle123", "Kalle"]];
 
-describe("testing login method", () => {
+describe("testing register method", () => {
     test.each(cases)(
         "Test if given username is stored in localstorage.",
         (username, password, expectedResult) => {

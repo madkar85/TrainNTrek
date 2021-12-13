@@ -48,10 +48,6 @@ function ActivityCards() {
     );
   });
 
-  return (
-    <>
-      {workout}
-    </>
-  );
+  return <>{workout}</>;
 }
 export default ActivityCards;

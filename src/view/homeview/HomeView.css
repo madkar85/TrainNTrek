@@ -16,25 +16,23 @@
   margin: 2vw auto;
 }
 
-
-#h2Home{
+#h2Home {
   font-family: "Varela Round", sans-serif;
   font-size: 3vw;
   text-align: center;
   margin: 1vh 0 0 0;
 }
 
-.users{
+.users {
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr ;
-  
+  grid-template-rows: 0.1fr 0.1fr;
 }
 
-.users ul{
+.users ul {
   margin: 0 auto;
   height: 15em;
 }
 
-.users ul li{
+.users ul li {
   height: 2em;
 }

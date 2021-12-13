@@ -17,10 +17,6 @@
   margin: auto;
 }
 
-.dropdownMenu:hover .dropdown-content {
-  display: flex;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -31,6 +27,10 @@
   border-radius: 0.4em;
   padding: 8px 16px;
   z-index: 1;
+}
+
+.dropdownMenu:hover .dropdown-content {
+  display: flex;
 }
 
 .list {
