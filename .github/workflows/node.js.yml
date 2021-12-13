@@ -26,10 +26,6 @@ jobs:
       - run: npm run build --if-present
         env:
           CI: false
-      - name: Super-Linter
-        uses: github/super-linter@v4.8.1
-        env:
-          DISABLE_ERRORS: true
 
   development:
     if: |
@@ -52,6 +48,10 @@ jobs:
       - run: npm run build --if-present
         env:
           CI: false
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.1
+        env:
+          DISABLE_ERRORS: true
 
   staging:
     if: github.event_name == 'pull_request' && github.base_ref == 'staging'
@@ -70,6 +70,10 @@ jobs:
       - run: npm run build --if-present
         env:
           CI: false
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.1
+        env:
+          DISABLE_ERRORS: true
 
   deploy:
     if: github.event_name == 'pull_request' && github.base_ref == 'master'
@@ -83,6 +87,10 @@ jobs:
         run: echo "deploying"
         env:
           CI: false
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.1
+        env:
+          DISABLE_ERRORS: true
   tests:
       name: tests
       runs-on: ubuntu-latest
