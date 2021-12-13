@@ -50,11 +50,6 @@ const CombinedStats = () => {
 
   DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth);
 
-  // function DateTest(activityDateYearAndMonth, oneMonthBackYearAndMonth) {
-  //   if (activityDateYearAndMonth > oneMonthBackYearAndMonth) return true
-  //   else return false
-  // }
-
   return (
     <div className="statsContainer">
       <h1>This is your statistics for one month back</h1>
