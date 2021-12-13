@@ -11,7 +11,7 @@ const SearchView = () => {
   const [searchedUser, setSearchedUser] = useState()
   const history = useHistory()
   const [username, setUsername] = useState()
-  const [user, setUser] = useState('Elias')
+  const [user, setUser] = useState()
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
   const location = useLocation()
   localStorage.setItem("Elias", "He is online, and taking a walk!")
