@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext } from 'react'
 
-//Provider for weatherinfo
+// Provider for weatherinfo
 
 export const WeatherContext = createContext()
 

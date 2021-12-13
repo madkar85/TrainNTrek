@@ -28,15 +28,13 @@
 }
 
 @media screen and (max-width: 700px) {
-  
   .statsView {
     justify-content: center;
   }
 
   .statSection {
-    grid-template-areas: "stats stats"
-                         "converter converter";
-  } 
+    grid-template-areas:
+      "stats stats"
+      "converter converter";
+  }
 }
-
-

@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext } from 'react'
 
-//Provider for distance goal
+// Provider for distance goal
 
 export const GoalDistanceContext = createContext()
 

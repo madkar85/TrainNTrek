@@ -1,13 +1,13 @@
 import { React, useContext } from 'react'
-import "./GoalResult.css"
-import { GoalDistanceContext } from "../../shared/provider/GoalDistanceProvider"
-import { GoalPaceContext } from "../../shared/provider/GoalPaceProvider"
-import { GoalTimeContext } from "../../shared/provider/GoalTimeProvider"
+import './GoalResult.css'
+import { GoalDistanceContext } from '../../shared/provider/GoalDistanceProvider'
+import { GoalPaceContext } from '../../shared/provider/GoalPaceProvider'
+import { GoalTimeContext } from '../../shared/provider/GoalTimeProvider'
 
 const GoalResult = () => {
-    const [pace, setPace] = useContext(GoalPaceContext);
-    const [time, setTime] = useContext(GoalTimeContext);
-    const [distance, setDistance] = useContext(GoalDistanceContext);
+  const [pace, setPace] = useContext(GoalPaceContext)
+  const [time, setTime] = useContext(GoalTimeContext)
+  const [distance, setDistance] = useContext(GoalDistanceContext)
 
     function DistanceGoal() {
         if (distance == null) return 100;
