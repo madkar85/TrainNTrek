@@ -5,6 +5,5 @@ function Register(username, password){
       alert('You are registered .');
     }
   }
-}
 
 module.exports = Register
