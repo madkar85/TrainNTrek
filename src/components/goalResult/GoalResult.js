@@ -14,11 +14,11 @@ const GoalResult = () => {
         else return distance
     }
     function PaceGoal() {
-        if (pace == null) return 100;
+        if (pace == null) return 2;
         else return pace
     }
     function TimeGoal() {
-        if (time == null) return 100;
+        if (time == null) return 8;
         else return time
     }
 
@@ -36,9 +36,9 @@ const GoalResult = () => {
                 <p> Activity time: </p>
             </div>
             <div className="goalValue">
-                <p> 1/{DistanceGoal()} </p>
-                <p> 12/{PaceGoal()} </p>
-                <p> 15/{TimeGoal()} </p>
+                <p> 1/{DistanceGoal()} km</p>
+                <p> 1.5/{PaceGoal()} m/s</p>
+                <p> 7/{TimeGoal()} h</p>
             </div>
         </div>
     )
