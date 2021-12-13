@@ -28,9 +28,6 @@ const HamburgerMenu = () => {
         <Link to={RoutingPath.statsView}>
           <li> Stats </li>
         </Link>
-        <Link to={RoutingPath.searchView}>
-          <li> Search</li>
-        </Link>
         <Link to={RoutingPath.bmiView}>
           <li> BMI calculator </li>
         </Link>

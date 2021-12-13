@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./Form.css"
+
 const shortid = require("shortid");
 
 export default class Form extends Component {
@@ -38,7 +40,7 @@ export default class Form extends Component {
       return (
         <React.Fragment>
           <form onClick={this.toggleChange}>
-            <button type="button" className="btn btn-success">
+            <button type="button" className="addButton">
               Add Meal
             </button>
           </form>
@@ -47,34 +49,38 @@ export default class Form extends Component {
     } else {
       return (
         <React.Fragment>
-          <form onSubmit={this.handleSubmit}>
+          <form className="dietForm" onSubmit={this.handleSubmit}>
+            <div className="formgroup-grid">
+            <label className="tag">Meal:</label>
             <div className="form-group">
-              <label>Meal:</label>
               <input
                 name="text"
                 value={this.state.text}
                 onChange={this.handleChange}
-                className="form-control"
+                className="formInput"
                 id="email"
               />
             </div>
+            <label className="tag">Cals:</label>
             <div className="form-group">
-              <label>Calories:</label>
               <input
                 name="calorie"
                 value={this.state.calorie}
                 onChange={this.handleChange}
                 type="number"
-                className="form-control"
+                className="formInput"
                 id="pwd"
               />
             </div>
-            <button onSubmit={this.handleSubmit} className="btn btn-info mr-2">
+            </div>
+            <div id="btns">
+            <button onSubmit={this.handleSubmit} className="saveBtn">
               Save
             </button>
-            <button onClick={this.toggleChange} className="btn btn-danger">
+            <button onClick={this.toggleChange} className="cancelBtn">
               Cancel
             </button>
+            </div>
           </form>
         </React.Fragment>
       );
