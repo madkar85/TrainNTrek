@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+==Motivering till användning av tester==
 
-In the project directory, you can run:
+Då vi hade problem med att genomföra integrationstester med react så utökade vi antalet andra tester till tre stycken utöver unit- och integrationstester.
 
-### `npm start`
+Användna testmetoder: Smoke test, Sanity test och Acceptance testing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Smoke Test: Genom att testa funktionalitet, t.ex. inloggning och registrering och föra ned resultatet i ett excel-ark (bifogat)
+får utvecklarna möjlighet att åtgärda eventuella fel.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Sanity Test: Under utvecklingen av produkten hade vi ett fall där en större feature som inte tidigare hade integreras med
+övrig kod skulle integreras. För att dokumentera eventuella fel som behövde åtgärdas efter denna integration dokuemnterades denna merge.
 
-### `npm test`
+Acceptance Test: För att komplettera funktionstestet i Smoke test gjordes även ett acceptance test där hela projektgruppen gemensamt
+gick genom sidan för att komma med synpunkter på visuella förbättringar som kunde göras. Detta dokuemnterades i ett excel-ark (bifogat).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+Sanity test av TrekNTrain
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+==Scenario==
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Integration av branch ”Dennis” in i developmentmiljö. Anledning att detta används som testscenario är då ny funktionalitet
+bedöms påverka övriga programmet i större utsträckning än övriga.
+Bland annat då routing har uppdaterats samt att flera bibliotek har använts som inte använts vid övriga komponenter.
+Featuren innehåller utöver ny routing även en ny vy där dietmål kan sättas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+==Utfall==
 
-### `npm run eject`
+Inloggningsvy:
+Till utseende i stort sett lika innan.
+Väderkomponent är nu något större än navigationsbar. Inloggningsfunktion intakt.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Hemvy:
+Knapp för hämtning av senaste aktivitet har ett förändrat utseende, footer ligger fel i förhållande till övriga komponenter.
+När View-knapp används trycks rubriktext upp i navigationsbaren.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Searchvy:
+Orienteringen på komponenter fel då sökfält, rubrik samt knapp vänsterställts istället för att vara centerorienterade.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Statistikvy:
+Converter och användarfeed ligger ovanpå varandra. Detta är ett tidigare fel och bedöms inte ha påverkats av den nya featuren
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Dietvy:
+Ser bra ut men blir något felorienterad i förhållande till övriga sidan.
 
-## Learn More
+Generellt:
+Stylingen för tidigare delar av hemsidan har blivit förändrad.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+==Föreslagen åtgärd==
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Den feature som importeras använder bibliotek som inte använts i övriga programmet och det kan därför finnas en risk
+att importerat bilbiotek använder sig av CSS-kod som skriver över kod från tidigare features.
+Återställ developmentbranch från innan det att inkommande branch infogades. Avinstallera sedan stilbibliotek och skapa
+ny css för att stilsätta dietsidan på samma vis som övriga sidan. Konflikter skall förhoppningsvis då inte uppstå.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
