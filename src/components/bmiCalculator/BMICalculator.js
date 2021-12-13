@@ -38,7 +38,7 @@ const BMICalculator = () => {
   return (
     <div className="container">
     <div className="form-control">
-      <div className="header-text"><h2>BMI-Calculatore</h2></div>
+      <div className="header-text"><h2>BMI-Calculator</h2></div>
         <div className="header-text"> Modify the values and ckick the Calculate button to use.</div>
         <input 
         type="number"
