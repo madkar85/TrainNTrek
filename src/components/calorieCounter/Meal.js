@@ -8,8 +8,7 @@ export default function Table (props) {
         <td>{props.meal.text}</td>
         <td>{props.meal.calorie}</td>
         <td>
-          <FaTrash onClick={props.onDelete} className='mr-4' />
-          <FaEdit />
+          <FaTrash onClick={props.onDelete} className="mr-4" />
         </td>
       </tr>
     </>

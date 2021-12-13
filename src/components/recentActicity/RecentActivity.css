@@ -4,14 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  width: 28vw;
   height: 14vw;
-  border: solid black 2px;
+  box-shadow: 0 0 15px var(--clr-navy-blue);
   background-color: #f05454;
-  margin: auto;
+  margin: 1vw auto;
   border-radius: 0.8em;
   font-family: "Varela Round", sans-serif;
-  box-shadow: 0 0 10px rgb(73, 73, 73);
+  box-shadow: 0 0 15px var(--clr-navy-blue);
 }
 
 .recentActivityHide {
@@ -20,12 +20,12 @@
   align-items: center;
   width: 40vw;
   height: auto;
-  border: solid black 4px;
+  box-shadow: 0 0 15px var(--clr-navy-blue);
   background-color: #f05454;
-  margin: auto;
+  margin: 1vw auto;
   border-radius: 0.8em;
   font-family: "Varela Round", sans-serif;
-  box-shadow: 0 0 10px rgb(73, 73, 73);
+  box-shadow: 0 0 15px var(--clr-navy-blue);
 }
 
 .info {

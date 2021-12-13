@@ -9,9 +9,35 @@
   border-radius: 0.5em;
 }
 
-.form-control {
-  margin: 0.4em 0;
-}
+  .container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: auto;
+    min-height: 30%;
+    box-shadow: 0 0 10px var(--clr-navy-blue);
+    padding: 1em 3em;
+    border-radius: .5em;
+  }
+  .form-control {
+    margin: 0.4em 0;
+  }
+ 
+  .form-control input {
+    width: 100%;
+    height: 2em;
+    margin: .2em;
+    padding: .3em .7em;
+    font-size: 1em;
+    border-radius: .7em;
+  }
+
+  .header-text {
+    text-align: left;
+    display: flex;
+    margin: .2em 0px;
+    color: rgb(50, 51, 51);
+  }
 
 .form-control input {
   width: 100%;
