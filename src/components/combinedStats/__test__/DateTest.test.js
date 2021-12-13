@@ -1,4 +1,4 @@
-const DateTest = require('./DateTest.js')
+const DateTest = require('../DateTest.js');
 
 const cases = [
   ['202108', '202107', true],

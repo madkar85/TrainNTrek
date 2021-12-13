@@ -25,7 +25,6 @@
   width: 8vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.4em;
-  padding: 8px 16px;
   z-index: 1;
 }
 
@@ -38,9 +37,11 @@
 }
 
 .listbtn {
+  width: 100%;
   padding: 16px;
   font-size: 16px;
-  border: none;
+  border: solid var(--clr-black) 2px;
+  border-radius: 0.2em;
   cursor: pointer;
   background-color: var(--clr-grey-background);
 }
