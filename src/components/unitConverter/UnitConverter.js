@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import './UnitConverter.css'
 
+// Unit converter showed in the stats view
+
 const UnitConverter = () => {
   const { ConvertKmPerHourToMeterPerSecond } = require('./CalculateConversions')
   const { ConvertMeterPerSecondToKmPerHour } = require('./CalculateConversions')
