@@ -5,6 +5,8 @@ const { ConvertMilesToKm } = require('../CalculateConversions')
 const { ConvertKiloToPound } = require('../CalculateConversions')
 const { ConvertPoundToKilo } = require('../CalculateConversions')
 
+// Testing the functionality of all the converter methods
+
 describe('Converting from km/h to m/s', () => {
   test.each([
     [250, 69.4444445],
