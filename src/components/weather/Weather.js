@@ -1,12 +1,12 @@
-import React from "react"
-import "./Weather.css"
-import WeatherApi from "../../shared/api/WeatherApi"
+import React from 'react'
+import './Weather.css'
+import WeatherApi from '../../shared/api/WeatherApi'
 
 // Weather collected from API showed in the navbar
 
-function Weather() {
+function Weather () {
   return (
-    <div className="weatherContainer">
+    <div className='weatherContainer'>
       <WeatherApi />
     </div>
   )

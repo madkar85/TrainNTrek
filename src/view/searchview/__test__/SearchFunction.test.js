@@ -14,6 +14,5 @@ test('Testing an existing user', () => {
 });
 
 test('Testing a non existant user', () => {
-    expect(search('Johan')).toBe("User doesn't exist!");
-});
-
+  expect(search('Johan')).toBe("User doesn't exist!")
+})

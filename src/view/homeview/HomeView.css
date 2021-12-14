@@ -13,28 +13,28 @@
 .textField h3 {
   font-size: 1.5vw;
   width: 34vw;
-  margin: 2vw auto;
+  margin: 3vw auto;
 }
 
-
-#h2Home{
+#h2Home {
   font-family: "Varela Round", sans-serif;
   font-size: 3vw;
   text-align: center;
   margin: 1vh 0 0 0;
 }
 
-.users{
+.users {
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr ;
-  
+  grid-template-rows: 0.1fr 0.1fr;
 }
 
 .users ul{
-  margin: 0 auto;
+  margin: 0.5em auto;
   height: 15em;
+  box-shadow: 0 0 15px var(--clr-navy-blue);
+  border-radius: 0.8em;
 }
 
-.users ul li{
+.users ul li {
   height: 2em;
 }

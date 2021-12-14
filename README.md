@@ -58,3 +58,15 @@ att importerat bilbiotek använder sig av CSS-kod som skriver över kod från ti
 ny css för att stilsätta dietsidan på samma vis som övriga sidan. Konflikter skall förhoppningsvis då inte uppstå.
 
 ---
+
+Github Wiki
+
+==Översikt==
+
+Wiki funktionen av Github kan man använda sig av för att skapa en informationsida för sitt projekt, vilket andra sedan kan titta på och förstå vad projektet går ut på för att sedan kunna arbeta vidare på projektet. Det är en sorts hjälpfunktion där man kan dela projektets roadmap samt bygga en mer påtaglig version av sin vision.
+
+Man kan också dela upp wikin i olika sidor/kapitel så att man lätt och snabbt kan navigera sig till den delen man är intresserad.
+
+Github wiki gör det också möjligt om man skulle vilja, till att visa sidan på ett sätt så att man slipper starta hemsidan för att förstå vad den ska göra. Utan man ser den direkt på Github och kan på så sätt bilda sin uppfattning av appen/hemsidan.
+
+---
