@@ -1,7 +1,7 @@
 import './SettingsForm.css'
 
+// Form for settings view.
 const SettingsForm = () => {
-
     return (
         <>
             <form id="settingsForm">
