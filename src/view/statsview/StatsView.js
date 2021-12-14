@@ -6,7 +6,6 @@ import ActivityCard from '../../components/activityCard/ActivityCard'
 import { StatsContext } from '../../shared/provider/StatsProvider'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../../routes/RoutingPath'
-
 import UnitConverter from '../../components/unitConverter/UnitConverter'
 
 // Statistics View
