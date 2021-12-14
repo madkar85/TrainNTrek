@@ -1,5 +1,6 @@
 const search = require('../SearchFunction.js');
 
+// These are the unit tests for the Search function.
 test('Testing an existing user', () => {
 
     localStorage.setItem("Elias", "He is online, and taking a walk!")
