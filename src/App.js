@@ -6,8 +6,9 @@ import { UserProvider } from './shared/provider/UserProvider'
 import { GoalDistanceProvider } from './shared/provider/GoalDistanceProvider'
 import { GoalPaceProvider } from './shared/provider/GoalPaceProvider'
 import { GoalTimeProvider } from './shared/provider/GoalTimeProvider'
+import { SportTypeProvider } from './shared/provider/SportTypeProvider'
 
-function App () {
+function App() {
   return (
     <UserProvider>
       <StatsProvider>
@@ -15,9 +16,11 @@ function App () {
           <GoalDistanceProvider>
             <GoalPaceProvider>
               <GoalTimeProvider>
-                <div className='App'>
-                  <Routes />
-                </div>
+                <SportTypeProvider>
+                  <div className='App'>
+                    <Routes />
+                  </div>
+                </SportTypeProvider>
               </GoalTimeProvider>
             </GoalPaceProvider>
           </GoalDistanceProvider>

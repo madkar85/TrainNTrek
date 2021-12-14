@@ -10,7 +10,10 @@ import Linusbild from '../../shared/img/Linus.jpg'
 import Markooliobild from '../../shared/img/markoolio.JPG'
 import Eliasbild from '../../shared/img/IkeaGlassOP.jpg'
 
-export default function AlignItemsList () {
+
+// This is the status list box file, where you can see different users with their respective status updates.
+export default function AlignItemsList() {
+
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems='flex-start'>

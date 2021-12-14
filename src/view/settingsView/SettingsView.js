@@ -1,6 +1,9 @@
 import Footer from '../../components/footer/Footer'
 import SettingsForm from '../../components/settingsForm/SettingsForm'
 import './SettingsView.css'
+
+// The view for the settings page.
+
 const SettingsView = () => {
   return (
     <>
