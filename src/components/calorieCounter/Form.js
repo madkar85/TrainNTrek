@@ -23,16 +23,25 @@ export default class Form extends Component {
   };
 
   handleSubmit = (event) => {
+    let pattern= /^([A-Za-z])+$/u;
     event.preventDefault();
-    this.props.onsubmit({
-      id: shortid.generate(),
-      text: this.state.text,
-      calorie: parseInt(this.state.calorie),
-    });
-    this.setState({
-      text: "",
-      calorie: "",
-    });
+    if(this.state.calorie==""|| this.state.text==""){
+      alert("Woops, the field can not be blank. Please enter a value ")
+    }
+    else if(this.state.text!=="" && pattern.test(this.state.text)==false){
+      alert("Woops, please enter only alphabetical letters for the meal")
+    }
+    else{
+      this.props.onsubmit({
+        id: shortid.generate(),
+        text: this.state.text,
+        calorie: parseInt(this.state.calorie),
+      });
+      this.setState({
+        text: "",
+        calorie: "",
+      });
+    }
   };
 
   render() {

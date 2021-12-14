@@ -5,13 +5,15 @@ import GoalMenu from '../../components/goalMenu/GoalMenu'
 import GoalForm from '../../components/goalForm/GoalForm'
 import GoalResult from '../../components/goalResult/GoalResult'
 
+// View for goal components
+
 const GoalView = () => {
   return (
     <>
       <div className='goalView'>
         <section className='componentField'>
           <div className='headerText'>
-            <h2>Set your personal Goals!</h2>
+            <h2>Set your personal Goals for this month!</h2>
           </div>
           <div className='activityMenu'>
             <GoalMenu />

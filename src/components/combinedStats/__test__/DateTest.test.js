@@ -1,5 +1,7 @@
 const DateTest = require('../DateTest.js');
 
+// Testing the DateTest with unit test
+
 const cases = [
   ['202108', '202107', true],
   ['202104', '202105', false]
