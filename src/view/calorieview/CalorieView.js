@@ -26,7 +26,7 @@ class CalorieView extends Component {
       <>
         <div className="dietContainer">
           <div className="jumbotron">
-            <h2 className="claorieHeaderText">Calorie Counter</h2>
+            <h2 className="calorieHeaderText">Calorie Counter</h2>
             <hr />
             <Form onsubmit={this.addMeal} />
             <table className="table table-striped">

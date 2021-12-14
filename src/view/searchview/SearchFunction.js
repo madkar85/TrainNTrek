@@ -1,3 +1,4 @@
+
 // Function that handles the search algorithm to get the status of a user.
 function search(user){
     let userInfo = (localStorage.getItem(user))
@@ -8,4 +9,4 @@ function search(user){
     return userInfo
   }
 
-  module.exports = search;
+module.exports = search
