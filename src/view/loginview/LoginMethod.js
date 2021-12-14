@@ -1,3 +1,5 @@
+// Function for registration.
+
 function Register(username, password){
     localStorage.setItem("username", username)
     localStorage.setItem("password", password)
