@@ -4,7 +4,9 @@ import { GoalPaceContext } from '../../shared/provider/GoalPaceProvider'
 import { GoalTimeContext } from '../../shared/provider/GoalTimeProvider'
 import './GoalForm.css'
 
-function GoalForm () {
+// The form where user can fill in activity goals
+
+function GoalForm() {
   const [distanceState, setDistanceState] = useState()
   const [paceState, setPaceState] = useState()
   const [timeState, setTimeState] = useState()
@@ -38,7 +40,7 @@ function GoalForm () {
       <div className='distanceField'>
         <form onSubmit={handleDistanceSubmit}>
           <input
-            type='number'
+            type='text'
             value={distanceState}
             onChange={(e) => setDistanceState(e.target.value)}
           />
@@ -51,7 +53,7 @@ function GoalForm () {
       <div className='paceField'>
         <form onSubmit={handlePaceSubmit}>
           <input
-            type='number'
+            type='text'
             value={paceState}
             onChange={(e) => setPaceState(e.target.value)}
           />
@@ -64,7 +66,7 @@ function GoalForm () {
       <div className='timeField'>
         <form onSubmit={handleTimeSubmit}>
           <input
-            type='number'
+            type='text'
             value={timeState}
             onChange={(e) => setTimeState(e.target.value)}
           />
