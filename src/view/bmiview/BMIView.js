@@ -3,6 +3,7 @@ import './BMIView.css'
 import BMICalculator from '../../components/bmiCalculator/BMICalculator'
 import Footer from '../../components/footer/Footer'
 
+// View for BMICalculator component
 const BMIView = () => {
   
     return (
