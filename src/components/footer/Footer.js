@@ -1,11 +1,11 @@
-import React from "react"
-import "./Footer.css"
+import React from 'react'
+import './Footer.css'
 
-//Footer for all views
+// Footer for all views
 
-function footer() {
+function footer () {
   return (
-    <section className="footer">
+    <section className='footer'>
       <h3>
         &#169; Andromeda Development Studio <br /> EST 2021
       </h3>

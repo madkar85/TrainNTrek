@@ -1,15 +1,15 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext } from 'react'
 
-//Provider for pace goal
+// Provider for pace goal
 
 export const GoalPaceContext = createContext()
 
 export const GoalPaceProvider = (props) => {
-    const [pace, setPace] = useState()
+  const [pace, setPace] = useState()
 
-    return (
-        <GoalPaceContext.Provider value={[pace, setPace]}>
-            {props.children}
-        </GoalPaceContext.Provider>
-    )
+  return (
+    <GoalPaceContext.Provider value={[pace, setPace]}>
+      {props.children}
+    </GoalPaceContext.Provider>
+  )
 }
