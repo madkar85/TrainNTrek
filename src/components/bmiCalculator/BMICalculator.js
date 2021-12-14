@@ -12,8 +12,11 @@ const BMICalculator = () => {
   const { PrintBMIStatus } = require('./PrintInfo')
   const { PrintBMIInfo } = require('./PrintInfo')
 
+  // Function that validates inputs and then calculate BMI
   const handleBmi = () => {
-    let value
+
+    let value = 0
+
     if (weight == null || height == null) {
       alert('Woops, the field can not be blank. Please enter a value ')
       return 'value is not valid'
@@ -46,13 +49,6 @@ const BMICalculator = () => {
         type="number"
         onChange={(e) => setWeight(e.target.value)}
         placeholder=" Enter your weight in kg"
-        />
-      </div>
-      <div className='form-control'>
-        <input
-          type='number'
-          onChange={(e) => setWeight(e.target.value)}
-          placeholder=' Enter your weight in kg'
         />
       </div>
       <button className='btn btn-block' onClick={handleBmi}> Calculate </button>
