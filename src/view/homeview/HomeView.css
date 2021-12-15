@@ -30,11 +30,12 @@
 
 .users ul{
   margin: 0.5em auto;
-  height: 15em;
+  height: 18em;
+
   box-shadow: 0 0 15px var(--clr-navy-blue);
   border-radius: 0.8em;
 }
 
 .users ul li {
-  height: 2em;
+  height: 3em;
 }
