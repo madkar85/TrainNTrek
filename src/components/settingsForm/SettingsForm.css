@@ -22,20 +22,21 @@
 }
 
 .field {
-  text-align: left;
-  border-radius: 0.8em;
-  margin: 2.5em auto 0;
-  height: 10vw;
+    text-align: left;
+    border-radius: 0.8em;
+    margin: 2.5em auto 0;
+    height: 10vw;
+    justify-content: center
 }
 
 .genderField {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;
-  height: 10vw;
-  border-radius: 0.8em;
-  margin-top: 2em;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 10vw;
+    border-radius: 0.8em;
+    margin-top: 2em;
 }
 
 .gender {
@@ -57,10 +58,10 @@
 }
 
 #submitBox {
-  text-align: center;
-  border-radius: 0.8em;
-  margin: 0.5vw auto;
-  height: 10vw;
+    text-align: center;
+    border-radius: 0.8em;
+    margin: 0.5vw auto ;
+    height: 10vw;
 }
 
 .submitButton {
@@ -89,7 +90,7 @@
   transform: scale(0.9);
 }
 
-p {
+#settingsForm p {
   display: inline;
   margin: 0;
   padding: 0 0.3vw;
