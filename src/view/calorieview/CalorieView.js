@@ -4,23 +4,26 @@ import Meal from "../../components/calorieCounter/Meal";
 import "./CalorieView.css";
 import Footer from "../../components/footer/Footer";
 
+// Class for the View of Calorie Counter.
 class CalorieView extends Component {
   state = {
     meals: [],
   };
 
+  // Method for adding a Meal.
   addMeal = (meal) => {
     this.setState({
       meals: [meal, ...this.state.meals],
     });
   };
 
+  // Method for deleting a Meal.
   onDelete = (id) => {
     this.setState({
       meals: this.state.meals.filter((meal) => meal.id !== id),
     });
   };
-
+  // Render method.
   render() {
     return (
       <>
