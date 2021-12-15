@@ -35,20 +35,20 @@ const BMICalculator = () => {
 
   return (
     <div className="container">
-    <div className="form-control">
-      <div className="header-text"><h2>BMI-Calculator</h2></div>
-        <div className="header-text"> Modify the values and ckick the Calculate button to use.</div>
-        <input 
-        type="number"
-        onChange={(e) => setHeight(e.target.value)}
-        placeholder=" Enter you height in cm"
-         />
-    </div>
-    <div className="form-control">
-        <input 
-        type="number"
-        onChange={(e) => setWeight(e.target.value)}
-        placeholder=" Enter your weight in kg"
+      <div className="form-control">
+        <div className="header-text"><h2>BMI-Calculator</h2></div>
+        <div className="header-text"> Modify the values and click the Calculate button to use.</div>
+        <input
+          type="number"
+          onChange={(e) => setHeight(e.target.value)}
+          placeholder=" Enter you height in cm"
+        />
+      </div>
+      <div className="form-control">
+        <input
+          type="number"
+          onChange={(e) => setWeight(e.target.value)}
+          placeholder=" Enter your weight in kg"
         />
       </div>
       <button className='btn btn-block' onClick={handleBmi}> Calculate </button>
