@@ -25,7 +25,7 @@ const GoalResult = () => {
       <div className='dropdown-content'>
         <ul className='list'>
           <li><button className='listbtn' onClick={() => SetNewSport('Running')}> Running </button></li>
-          <li><button className='listbtn' onClick={() => SetNewSport('Cycling')}> Cyckling </button></li>
+          <li><button className='listbtn' onClick={() => SetNewSport('Cycling')}> Cycling </button></li>
           <li><button className='listbtn' onClick={() => SetNewSport('Hiking')}> Hiking </button></li>
         </ul>
       </div>
