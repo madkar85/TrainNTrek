@@ -27,7 +27,7 @@ export default class Form extends Component {
 
   // Method for when you push Save.
   handleSubmit = (event) => {
-    let pattern = /^([A-Za-z])+$/u;
+    let pattern = /^([A-Öa-ö])+$/u;
     event.preventDefault();
     if (this.state.calorie == "" || this.state.text == "") {
       alert("Woops, the field can not be blank. Please enter a value ");
