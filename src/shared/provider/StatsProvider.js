@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext } from 'react'
 
-//Provider for statistics
+// Provider for statistics
 
 export const StatsContext = createContext()
 

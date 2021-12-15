@@ -1,0 +1,14 @@
+.dietContainer {
+  min-height: 30vw;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.jumbotron {
+    width: 50vw;
+    height: auto;
+    margin: 2vw auto;
+    box-shadow: 0 0 10px var(--clr-navy-blue);
+    border-radius: 0.4em;
+    padding: 1em;
+}

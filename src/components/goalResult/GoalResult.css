@@ -1,0 +1,48 @@
+.goalFormWrapper {
+  display: grid;
+  grid-template-areas:
+    "header1 header2"
+    "type goal";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.2fr;
+  width: 30vw;
+  height: 20vw;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 0.7em;
+  font-family: "Varela Round", sans-serif;
+  box-shadow: 0 0 10px var(--clr-navy-blue);
+  font-size: 0.8vw;
+  padding: 1vw;
+}
+
+.header1 {
+  grid-area: header1;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.header2 {
+  grid-area: header2;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.goalType {
+  grid-area: type;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5vh;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 1vh;
+}
+
+.goalValue {
+  grid-area: goal;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5vh;
+  font-size: 1.5em;
+  padding-top: 1vh;
+}

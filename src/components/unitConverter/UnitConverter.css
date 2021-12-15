@@ -1,0 +1,47 @@
+.converterWrapper {
+  display: grid;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0.8em;
+  bottom: 25vh;
+  left: 30vw;
+  width: 22vw;
+}
+
+.optionDropDown,
+.equalSign,
+.inputField,
+.title,
+.output {
+  width: auto;
+  height: auto;
+  font-size: 1vw;
+  text-align: center;
+  margin: 0.25em;
+}
+
+@media screen and (max-width: 1000px) {
+  .optionDropDown,
+  .equalSign,
+  .inputField,
+  .title,
+  .output {
+    font-size: 1.35vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .optionDropDown,
+  .equalSign,
+  .inputField,
+  .title,
+  .output {
+    width: 50vw;
+    font-size: 2.5vw;
+  }
+
+  .converterWrapper {
+    bottom: 5vh;
+    left: auto;
+    width: auto;
+  }
+}
