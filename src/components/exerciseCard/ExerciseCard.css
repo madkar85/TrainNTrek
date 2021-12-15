@@ -1,0 +1,17 @@
+.exerciseCard {
+  text-align: center;
+}
+
+.exerciseName {
+    font-size: 1.7rem;
+}
+
+.target {
+    font-size: 1.3rem;
+}
+
+.exerciseDescription {
+    font-size: 1.2rem;
+    padding: 0 5em;
+    text-align: left;
+}
