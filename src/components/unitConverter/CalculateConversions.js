@@ -1,3 +1,5 @@
+// Methods for converting between different units
+
 const ConvertKmPerHourToMeterPerSecond = (userInput) => {
   if (userInput < 0) return 0
   return userInput * 1 * 0.277777778

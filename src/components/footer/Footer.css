@@ -5,7 +5,7 @@
   height: auto;
   text-align: end;
   justify-content: end;
-  position: absolute;
+  position: static;
   bottom: 0;
 }
 

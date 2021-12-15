@@ -1,7 +1,8 @@
-import React from 'react'
-import { FaTrash, FaEdit } from 'react-icons/fa'
+import React from "react";
+import { FaTrash } from "react-icons/fa";
 
-export default function Table (props) {
+// Function for the tables with added values meal and calorie.
+export default function Table(props) {
   return (
     <>
       <tr>
@@ -12,5 +13,5 @@ export default function Table (props) {
         </td>
       </tr>
     </>
-  )
+  );
 }
