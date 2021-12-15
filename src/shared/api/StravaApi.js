@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useContext } from "react"
-import axios from "axios"
-import { StatsContext } from "../provider/StatsProvider"
-import spinner from "../img/spinner3.gif"
+import React, { useState, useEffect, useContext } from 'react'
+import axios from 'axios'
+import { StatsContext } from '../provider/StatsProvider'
+import spinner from '../img/spinner3.gif'
 
 // Strava API, both saving into global state and returning info when needed.
 
-function StravaApi(props) {
+function StravaApi (props) {
   const [response, setResponse] = useState()
   const [userStats, setUserStats] = useContext(StatsContext)
   const [recentActicity, setRecentActicity] = useState([])
@@ -17,14 +17,14 @@ function StravaApi(props) {
   const refreshToken = process.env.REACT_APP_STRAVA_REFRESHTOKEN_KEY
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchData () {
       try {
         console.log(clientId)
         const stravaRefreshResponse = await axios.all([
           axios.post(
             `https://www.strava.com/oauth/token?client_id=${clientId}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`
 
-          ),
+          )
         ])
         const stravaActivitiesResponse = await axios.get(
           `https://www.strava.com/api/v3/athlete/activities?access_token=${stravaRefreshResponse[0].data.access_token}`
@@ -35,14 +35,14 @@ function StravaApi(props) {
         setRecentActicity(stravaActivitiesResponse.data[0])
         console.log(stravaActivitiesResponse.data)
       } catch (error) {
-        alert("error when fetching data: " + error)
+        alert('error when fetching data: ' + error)
       }
     }
     fetchData()
   }, [])
 
-  function spinnerWhileLoadning() {
-    if (response && props.textInfo)
+  function spinnerWhileLoadning () {
+    if (response && props.textInfo) {
       return (
         <div>
           <h2>Type: {recentActicity.name}</h2>
@@ -55,9 +55,9 @@ function StravaApi(props) {
           </h2>
         </div>
       )
-    else if ((userStats || response) && !props.textInfo) return null
+    } else if ((userStats || response) && !props.textInfo) return null
     else {
-      return <img className="spinner" src={spinner} alt="Spinner" />
+      return <img className='spinner' src={spinner} alt='Spinner' />
     }
   }
 

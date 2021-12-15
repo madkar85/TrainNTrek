@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.bmiView {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+  font-family: "Varela Round", sans-serif;
+}
+
+.bmiTextField {
+  font-size: 1.5vw;
+  padding-bottom: 5em;
+}

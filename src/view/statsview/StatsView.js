@@ -1,11 +1,12 @@
-import React, { useContext } from "react"
-import "./StatsView.css"
-import CombinedStats from "../../components/combinedStats/CombinedStats"
-import Footer from "../../components/footer/Footer"
-import ActivityCard from "../../components/activityCard/ActivityCard"
-import { StatsContext } from "../../shared/provider/StatsProvider"
-import { useHistory } from "react-router-dom"
-import RoutingPath from "../../routes/RoutingPath"
+import React, { useContext } from 'react'
+import './StatsView.css'
+import CombinedStats from '../../components/combinedStats/CombinedStats'
+import Footer from '../../components/footer/Footer'
+import ActivityCard from '../../components/activityCard/ActivityCard'
+import { StatsContext } from '../../shared/provider/StatsProvider'
+import { useHistory } from 'react-router-dom'
+import RoutingPath from '../../routes/RoutingPath'
+import UnitConverter from '../../components/unitConverter/UnitConverter'
 
 // Statistics View
 
@@ -16,19 +17,27 @@ const StatsView = () => {
   const DisplayPage = () => {
     if (!userStats.length) {
       return history.push(RoutingPath.homeView)
-    } else
+    } else {
       return (
         <>
-          <div className="cardGrid">
+          <div className='cardGrid'>
             <ActivityCard />
           </div>
-          <CombinedStats />
+          <section className='statSection'>
+            <div className='stats'>
+              <CombinedStats />
+            </div>
+            <div className='converter'>
+              <UnitConverter />
+            </div>
+          </section>
           <Footer />
         </>
       )
+    }
   }
 
-  return <section className="statsView">{DisplayPage()}</section>
+  return <section className='statsView'>{DisplayPage()}</section>
 }
 
 export default StatsView

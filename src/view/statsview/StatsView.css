@@ -3,8 +3,38 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 2vw;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
   font-family: "Varela Round", sans-serif;
+}
+
+.statSection {
+  display: grid;
+  grid-template-areas: "stats converter";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.stats {
+  grid-area: stats;
+  margin: 0 auto;
+}
+
+.converter {
+  grid-area: converter;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .statsView {
+    justify-content: center;
+  }
+
+  .statSection {
+    grid-template-areas:
+      "stats stats"
+      "converter converter";
+  }
 }
