@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: master
-      url: xx
+      url: https://trekntrain.netlify.app
     steps:
       - name: deploy
         run: echo "deploying"

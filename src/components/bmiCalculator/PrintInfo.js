@@ -1,3 +1,4 @@
+//Function that gets BMI and then shows BMI status
 const PrintBMIStatus = (val) => {
   if (val < 18.5) {
     return 'Under Weight'
@@ -10,6 +11,7 @@ const PrintBMIStatus = (val) => {
   }
 }
 
+//Function that gets BMI status and then shows BMI info
 const PrintBMIInfo = (status) => {
   if (status === 'Under Weight') {
     return "Being underweight could be a sign you're not eating enough or you may be ill."
