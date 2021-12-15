@@ -10,6 +10,10 @@
   margin-top: 2vw;
 }
 
+.textField {
+  border-right: solid black 2px;
+}
+
 .textField h3 {
   font-size: 1.5vw;
   width: 34vw;
