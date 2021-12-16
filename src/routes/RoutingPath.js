@@ -8,6 +8,11 @@ const bmiView = '/bmi'
 const goalView = '/goal'
 const settingsView = '/settings'
 const calorieView = '/calorie'
+const exerciseView = '/exercise'
+const armsView = '/arms'
+const legsView = '/legs'
+const coreView = '/core'
+const glutesView = '/glutes'
 
 export default {
   homeView,
@@ -17,5 +22,10 @@ export default {
   bmiView,
   goalView,
   settingsView,
-  calorieView
+  calorieView,
+  exerciseView,
+  armsView,
+  legsView,
+  coreView,
+  glutesView
 }

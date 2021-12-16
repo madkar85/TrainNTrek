@@ -37,6 +37,9 @@ const HamburgerMenu = () => {
         <Link to={RoutingPath.calorieView}>
           <li> Calorie Counter </li>
         </Link>
+        <Link to={RoutingPath.exerciseView}>
+          <li> Exercises </li>
+        </Link>
         <Link to={RoutingPath.settingsView}>
           <li> Settings </li>
         </Link>

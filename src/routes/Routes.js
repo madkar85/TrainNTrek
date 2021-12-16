@@ -11,6 +11,12 @@ import CalorieView from '../view/calorieview/CalorieView'
 import RoutingPath from './RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
 import BMIView from '../view/bmiview/BMIView'
+import ExerciseView from '../view/exerciseView/ExerciseView'
+import ArmsView from '../view/exerciseView/ArmsView'
+import LegsView from '../view/exerciseView/LegsView'
+import CoreView from '../view/exerciseView/CoreView'
+import GlutesView from '../view/exerciseView/GlutesView'
+
 
 // Routes and authorisation mechanism
 
@@ -72,6 +78,31 @@ const Routes = () => {
             exact
             path={RoutingPath.calorieView}
             component={blockRouteIfNotAuth(CalorieView)}
+          />
+          <Route
+            exact
+            path={RoutingPath.exerciseView}
+            component={blockRouteIfNotAuth(ExerciseView)}
+          />
+                   <Route
+            exact
+            path={RoutingPath.armsView}
+            component={blockRouteIfNotAuth(ArmsView)}
+          />
+                   <Route
+            exact
+            path={RoutingPath.legsView}
+            component={blockRouteIfNotAuth(LegsView)}
+          />
+                   <Route
+            exact
+            path={RoutingPath.coreView}
+            component={blockRouteIfNotAuth(CoreView)}
+          />
+                   <Route
+            exact
+            path={RoutingPath.glutesView}
+            component={blockRouteIfNotAuth(GlutesView)}
           />
           <Route
             path={RoutingPath.homeView}
