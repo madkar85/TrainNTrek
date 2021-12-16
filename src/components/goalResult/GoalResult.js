@@ -93,6 +93,54 @@ const GoalResult = () => {
         else return 0
     }
 
+    function DistanceStatus() {
+        if ((DistanceGoal() === 0 && DistanceMock() === 0) || DistanceGoal() === 0) {
+            return <>{DistanceMock()}/{DistanceGoal()} km</>
+        }
+        else if (DistanceGoal() <= DistanceMock()) {
+            return (
+                <div className='goalSuccess'>{DistanceMock()}/{DistanceGoal()} km</div>
+            )
+        }
+        else if (DistanceGoal() > DistanceMock()) {
+            return (
+                <div className='goalProgress'>{DistanceMock()}/{DistanceGoal()} km</div>
+            )
+        }
+    }
+
+    function PaceStatus() {
+        if ((PaceGoal() === 0 && PaceMock() === 0) || PaceGoal() === 0) {
+            return <>{PaceMock()}/{PaceGoal()} m/s</>
+        }
+        else if (PaceGoal() <= PaceMock()) {
+            return (
+                <div className='goalSuccess'>{PaceMock()}/{PaceGoal()} m/s</div>
+            )
+        }
+        else if (PaceGoal() > PaceMock()) {
+            return (
+                <div className='goalProgress'>{PaceMock()}/{PaceGoal()} m/s</div>
+            )
+        }
+    }
+
+    function TimeStatus() {
+        if ((TimeGoal() === 0 && TimeMock() === 0) || TimeGoal() === 0) {
+            return <>{TimeMock()}/{TimeGoal()} h</>
+        }
+        else if (TimeGoal() <= TimeMock()) {
+            return (
+                <div className='goalSuccess'>{TimeMock()}/{TimeGoal()} h</div>
+            )
+        }
+        else if (TimeGoal() > TimeMock()) {
+            return (
+                <div className='goalProgress'>{TimeMock()}/{TimeGoal()} h</div>
+            )
+        }
+    }
+
     return (
         <div className="goalFormWrapper">
             <div className="header1">
@@ -107,9 +155,9 @@ const GoalResult = () => {
                 <p> Activity time: </p>
             </div>
             <div className="goalValue">
-                <p> {DistanceMock()}/{DistanceGoal()} km</p>
-                <p> {PaceMock()}/{PaceGoal()} m/s</p>
-                <p> {TimeMock()}/{TimeGoal()} h</p>
+                <p> {DistanceStatus()} </p>
+                <p> {PaceStatus()} </p>
+                <p> {TimeStatus()} </p>
             </div>
         </div>
     )
