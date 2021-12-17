@@ -1,7 +1,14 @@
 import React, { useState, useContext } from 'react'
-import { GoalDistanceContext } from '../../shared/provider/GoalDistanceProvider'
-import { GoalPaceContext } from '../../shared/provider/GoalPaceProvider'
-import { GoalTimeContext } from '../../shared/provider/GoalTimeProvider'
+import { RunningDistanceContext } from '../../shared/provider/RunningDistanceProvider'
+import { CyclingDistanceContext } from '../../shared/provider/CyclingDistanceProvider'
+import { HikingDistanceContext } from '../../shared/provider/HikingDistanceProvider'
+import { RunningPaceContext } from '../../shared/provider/RunningPaceProvider'
+import { CyclingPaceContext } from '../../shared/provider/CyclingPaceProvider'
+import { HikingPaceContext } from '../../shared/provider/HikingPaceProvider'
+import { RunningTimeContext } from '../../shared/provider/RunningTimeProvider'
+import { CyclingTimeContext } from '../../shared/provider/CyclingTimeProvider'
+import { HikingTimeContext } from '../../shared/provider/HikingTimeProvider'
+import { SportTypeContext } from '../../shared/provider/SportTypeProvider'
 import './GoalForm.css'
 
 // The form where user can fill in activity goals
@@ -10,26 +17,73 @@ function GoalForm() {
   const [distanceState, setDistanceState] = useState()
   const [paceState, setPaceState] = useState()
   const [timeState, setTimeState] = useState()
-  const [distance, setDistance] = useContext(GoalDistanceContext)
-  const [pace, setPace] = useContext(GoalPaceContext)
-  const [time, setTime] = useContext(GoalTimeContext)
+  const [runningDistance, setRunningDistance] = useContext(RunningDistanceContext)
+  const [cyclingDistance, setCyclingDistance] = useContext(CyclingDistanceContext)
+  const [hikingDistance, setHikingDistance] = useContext(HikingDistanceContext)
+  const [runningPace, setRunningPace] = useContext(RunningPaceContext)
+  const [cyclingPace, setCyclingPace] = useContext(CyclingPaceContext)
+  const [hikingPace, setHikingPace] = useContext(HikingPaceContext)
+  const [runningTime, setRunningTime] = useContext(RunningTimeContext)
+  const [cyclingTime, setCyclingTime] = useContext(CyclingTimeContext)
+  const [hikingTime, setHikingTime] = useContext(HikingTimeContext)
+  const [sport, setSport] = useContext(SportTypeContext)
 
   const handleDistanceSubmit = (event) => {
-    setDistance(distanceState)
-    setDistanceState('')
-    event.preventDefault()
+
+    if (sport === "Running") {
+      setRunningDistance(distanceState)
+      setDistanceState('')
+      event.preventDefault()
+    }
+
+    if (sport === "Cycling") {
+      setCyclingDistance(distanceState)
+      setDistanceState('')
+      event.preventDefault()
+    }
+
+    if (sport === "Hiking") {
+      setHikingDistance(distanceState)
+      setDistanceState('')
+      event.preventDefault()
+    }
   }
 
   const handlePaceSubmit = (event) => {
-    setPace(paceState)
-    setPaceState('')
-    event.preventDefault()
+
+    if (sport === "Running") {
+      setRunningPace(paceState)
+      setPaceState('')
+      event.preventDefault()
+    }
+    if (sport === "Cycling") {
+      setCyclingPace(paceState)
+      setPaceState('')
+      event.preventDefault()
+    }
+    if (sport === "Hiking") {
+      setHikingPace(paceState)
+      setPaceState('')
+      event.preventDefault()
+    }
   }
 
   const handleTimeSubmit = (event) => {
-    setTime(timeState)
-    setTimeState('')
-    event.preventDefault()
+    if (sport === "Running") {
+      setRunningTime(timeState)
+      setTimeState('')
+      event.preventDefault()
+    }
+    if (sport === "Cycling") {
+      setCyclingTime(timeState)
+      setTimeState('')
+      event.preventDefault()
+    }
+    if (sport === "Hiking") {
+      setHikingTime(timeState)
+      setTimeState('')
+      event.preventDefault()
+    }
   }
 
   return (
