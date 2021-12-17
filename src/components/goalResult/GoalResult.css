@@ -13,7 +13,7 @@
   font-family: "Varela Round", sans-serif;
   box-shadow: 0 0 10px var(--clr-navy-blue);
   font-size: 0.8vw;
-  padding: 1vw;
+  padding: 0 1vw 1vw 1vw;
 }
 
 .header1 {
@@ -32,17 +32,23 @@
   grid-area: type;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 5vh;
+  row-gap: 1vh;
   font-weight: bold;
   font-size: 1.5em;
-  padding-top: 1vh;
 }
 
 .goalValue {
   grid-area: goal;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 5vh;
+  row-gap: 1vh;
   font-size: 1.5em;
-  padding-top: 1vh;
+  font-weight: bolder;
+}
+
+.goalSuccess {
+  color: rgb(1, 202, 1);
+}
+.goalProgress {
+  color: red;
 }
