@@ -47,6 +47,11 @@ function GoalForm() {
       setDistanceState('')
       event.preventDefault()
     }
+
+    else if (sport == null) {
+      alert("Please choose activity type first")
+      event.preventDefault()
+    }
   }
 
   const handlePaceSubmit = (event) => {
@@ -66,6 +71,10 @@ function GoalForm() {
       setPaceState('')
       event.preventDefault()
     }
+    else if (sport == null) {
+      alert("Please choose activity type first")
+      event.preventDefault()
+    }
   }
 
   const handleTimeSubmit = (event) => {
@@ -82,6 +91,10 @@ function GoalForm() {
     if (sport === "Hiking") {
       setHikingTime(timeState)
       setTimeState('')
+      event.preventDefault()
+    }
+    else if (sport == null) {
+      alert("Please choose activity type first")
       event.preventDefault()
     }
   }

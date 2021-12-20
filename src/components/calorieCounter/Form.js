@@ -29,11 +29,11 @@ export default class Form extends Component {
   handleSubmit = (event) => {
     let pattern = /^([A-Öa-ö])+$/u;
     event.preventDefault();
-    if (this.state.calorie == "" || this.state.text == "") {
+    if (this.state.calorie === "" || this.state.text === "") {
       alert("Woops, the field can not be blank. Please enter a value ");
     } else if (
       this.state.text !== "" &&
-      pattern.test(this.state.text) == false
+      pattern.test(this.state.text) === false
     ) {
       alert("Woops, please enter only alphabetical letters for the meal");
     } else {
