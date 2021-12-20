@@ -70,3 +70,22 @@ Man kan också dela upp wikin i olika sidor/kapitel så att man lätt och snabbt
 Github wiki gör det också möjligt om man skulle vilja, till att visa sidan på ett sätt så att man slipper starta hemsidan för att förstå vad den ska göra. Utan man ser den direkt på Github och kan på så sätt bilda sin uppfattning av appen/hemsidan.
 
 ---
+
+TrekNTrain Framåt
+
+==Backend==
+
+Projektet saknar i nuläget backend. För att få full funktionalitet i systemet krävs detta och det är något som kan kollas på för fortsatt utveckling av projektet.
+En fungerande backend och databaskoppling är viktigt för en riktigt inloggningsfunktion och sociala interaktioner mellan användare i tex nyhetsflödet.
+En fungerande databaskoppling är också nödvändigt för att få uppdaterad data från faktiska användare när man söker på dem.
+Goals-komponenten saknar även viss funktionalitet då vissa värden är hårdkodade för hur användarens faktiska värden är. Detta går att lösa likt det är gjort i
+komponenten combinedStats men kräver mer tid och kod för att extrahera rätt data från APIt under rätt tidsperiod.
+För full funktionalitet krävs också en autentisieringslösning från Stravas API för att en inloggad användare skall få sin personliga data, i nuläget är det en gruppmedlems
+data som visas.
+För att sparfunktionen i settings skall fungera som tänkt är också en fungerande backend nödvändigt.
+
+==Övrigt==
+
+Hade mer tid funnits för projektet finns det möjlighet till ytterligare förfining genom refaktorering och göra den responsiv för mobila enheter vilket den inte är i nuläget.
+
+---
