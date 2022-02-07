@@ -16,6 +16,7 @@ import ArmsView from '../view/exerciseView/ArmsView'
 import LegsView from '../view/exerciseView/LegsView'
 import CoreView from '../view/exerciseView/CoreView'
 import GlutesView from '../view/exerciseView/GlutesView'
+import FoodView from '../view/foodView/FoodView'
 
 
 // Routes and authorisation mechanism
@@ -79,6 +80,11 @@ const Routes = () => {
             path={RoutingPath.calorieView}
             component={blockRouteIfNotAuth(CalorieView)}
           />
+          <Route
+            exact
+            path={RoutingPath.foodView}
+            component={blockRouteIfNotAuth(FoodView)}
+           />
           <Route
             exact
             path={RoutingPath.exerciseView}

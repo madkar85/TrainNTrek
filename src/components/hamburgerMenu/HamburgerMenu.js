@@ -40,6 +40,9 @@ const HamburgerMenu = () => {
         <Link to={RoutingPath.exerciseView}>
           <li> Exercises </li>
         </Link>
+        <Link to={RoutingPath.foodView}>
+          <li> Food </li>
+         </Link>
         <Link to={RoutingPath.settingsView}>
           <li> Settings </li>
         </Link>

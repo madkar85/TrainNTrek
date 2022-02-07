@@ -13,6 +13,7 @@ const armsView = '/arms'
 const legsView = '/legs'
 const coreView = '/core'
 const glutesView = '/glutes'
+const foodView = '/food'
 
 export default {
   homeView,
@@ -27,5 +28,6 @@ export default {
   armsView,
   legsView,
   coreView,
-  glutesView
+  glutesView,
+  foodView
 }
