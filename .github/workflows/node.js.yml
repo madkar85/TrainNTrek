@@ -4,7 +4,7 @@ on:
   push:
     branches: [Madde]
   pull_request:
-    branches: [master]
+    branches: [staging]
 
 jobs:
   build:
@@ -27,12 +27,12 @@ jobs:
         env:
           CI: false
 
-  newStaging:
-    if: github.event_name == 'pull_request' && github.base_ref == 'newStaging'
+  staging:
+    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
     needs: [build, tests]
     runs-on: ubuntu-latest
     environment:
-      name: newStaging
+      name: staging
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
