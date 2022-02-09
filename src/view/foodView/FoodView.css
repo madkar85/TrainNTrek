@@ -1,0 +1,13 @@
+.foodView {
+    font-family: "Varela Round", sans-serif;
+}
+
+.foodHeading {
+    display: flex;
+    justify-content: center;
+}
+
+.nutritionFacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
