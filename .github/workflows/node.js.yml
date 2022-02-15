@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [elias, johan, linus, farzane, madde, dennis, tina]
+    branches: [Madde]
   pull_request:
-    branches: [development, staging, master]
+    branches: [master]
 
 jobs:
   build:
@@ -27,38 +27,12 @@ jobs:
         env:
           CI: false
 
-  development:
-    if: |
-      (github.event_name == 'pull_request' ||
-      github.event_name == 'push') && 
-      github.base_ref == 'development'
-
+  newStaging:
+    if: github.event_name == 'pull_request' && github.base_ref == 'newStaging'
     needs: [build, tests]
     runs-on: ubuntu-latest
     environment:
-      name: development
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm install
-      - run: npm run build --if-present
-        env:
-          CI: false
-      - name: Super-Linter
-        uses: github/super-linter@v4.8.1
-        env:
-          DISABLE_ERRORS: true
-
-  staging:
-    if: github.event_name == 'pull_request' && github.base_ref == 'staging'
-    needs: [build, tests]
-    runs-on: ubuntu-latest
-    environment:
-      name: staging
+      name: newStaging
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
