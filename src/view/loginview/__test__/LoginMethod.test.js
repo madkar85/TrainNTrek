@@ -1,7 +1,6 @@
 const Register = require("../LoginMethod")
-const cases = [["Kalle", "Kalle123", "Kalle"]];
-const cases = [["Madde", "abc123", "Madde"]];
-const cases = [["", "abc123", null]];
+const cases = [["Kalle", "Kalle123", "Kalle"], ["Madde", "abc123", "Madde"], [null,"abc123", null] ];
+
 
 // Test for testing register method.
 /*
