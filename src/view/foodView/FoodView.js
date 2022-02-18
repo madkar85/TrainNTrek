@@ -79,7 +79,7 @@ const FoodView = () => {
                         you may want to avoid eating right before you exercise. As a general rule, eat
                         one to three hours before your workout, even if you are going to do sustained, high-intensity activity, like a half marathon.</p>
                     </div>
-                    <div className='ruleHeading'>a
+                    <div className='ruleHeading'>
                         <h3>Rule 7: Remember the post-workout 15</h3>
                         <p className='nutritionText'>Your body uses its stored energy sources during a 
                         workout. After you exercise, you need to restore those nutrients as soon as 
@@ -91,12 +91,16 @@ const FoodView = () => {
                     </div>
                 </div>
                 <div className='recipes'>
-                    <h2>Links for recipes</h2>
-                    <p>Madeleine Rybeck is a swedish personal trainer who has her own website.
-                    Here you can find advice regarding for different exercises and inspiration and
-                    tips regarding diet and overall recipes for healthy food. She specialises in womens health.</p>
-                    <a href="https://www.lifeatcore.com/category/kost/">Life at core - diet and recipes</a>
-                    <a href="https://www.lifeatcore.com/">Life at core - homepage</a>
+                    <h2>Links for recipes and inspiration</h2>
+                    <div className="inspirationBox">
+                        <h3>Madeleine Rybeck</h3>
+                        <p>Madeleine is a swedish personal trainer who has her own website.
+                        Here you can find advice regarding for different exercises and inspiration and
+                        tips regarding diet and overall recipes for healthy food. She specialises in womens health.</p>
+                        <a href="https://www.lifeatcore.com/category/kost/">Life at core - diet and recipes</a>
+                        <a href="https://www.lifeatcore.com/">Life at core - homepage</a>
+                    </div>
+
                 </div>
             </div>
        </div>
