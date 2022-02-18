@@ -1,0 +1,58 @@
+.foodView {
+    font-family: "Varela Round", sans-serif;
+    padding: 3em;
+}
+
+.foodHeading {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.contentLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5em;
+    
+
+}
+
+.nutritionFacts {
+    justify-content: center;
+}
+
+.ruleHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 4vh;
+}
+
+.nutritionText {
+    display: none;
+    position: relative;
+    background-color: #e8e8e8;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ruleHeading:hover .nutritionText {
+    display: table-row;
+}
+
+.recipes {
+    justify-content: center;
+}
+
+.inspirationBox {
+    display: flex;
+    flex-direction: column;
+}
+
+
